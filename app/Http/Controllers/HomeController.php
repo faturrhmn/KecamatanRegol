@@ -112,4 +112,12 @@ class HomeController extends Controller
         return view('home.sejarah', compact('contact'));
     }
 
+    public function showPortfolio($id)
+    {
+        $portfolio = Portfolio::findOrFail($id);
+        $contact = Contact::first(); // Pastikan Anda memiliki Contact model dan data
+    
+        return view('home.portfolio-details', compact('portfolio', 'contact'));
+    }
+    
 }

@@ -51,7 +51,7 @@
         <ul>
           <li><a href="/">Beranda</a></li>
 
-          <li class="dropdown"><a href="#"><span>Pemerintahan</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="#"  class="active"><span>Pemerintahan</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="about">Visi dan Misi</a></li>
               <li><a href="team">Struktur Organisasi</a></li>
@@ -69,7 +69,7 @@
             </ul>
           </li>
 
-          <li><a href="portfolio" class="active">Berita</a></li>
+          <li><a href="portfolio">Berita</a></li>
           <li><a href="services">PPID</a></li>
           <li><a href="contact">Kontak</a></li>
 
@@ -87,54 +87,29 @@
     </div>
   </header><!-- End Header -->
 
-  <main id="main">
+  <section id="portfolio-details" class="portfolio-details">
+    <div class="container">
 
-    <!-- ======= Breadcrumbs ======= -->
-    <section id="breadcrumbs" class="breadcrumbs">
-      <div class="container">
-
-        <div class="d-flex justify-content-between align-items-center">
-          <ol>
-            <li><a href="index">Beranda</a></li>
-            <li>Berita</li>
-          </ol>
-        </div>
-
-      </div>
-    </section><!-- End Breadcrumbs -->
-
-    <section id="portfolio" class="portfolio">
-      <div class="container">
-        <div class="section-title" data-aos="fade-up">
-          <h2>Berita</h2>
-        </div>
-    
-        <div class="row">
-          <div class="col-lg-12">
-            <div id="portfolio" class="" data-bs-ride="">
-              <div class="row portfolio-container">
-                  @foreach ($portfolios as $portfolio)
-                      <div class="col-lg-4 col-md-6 portfolio-item">
-                          <img src="/image/{{$portfolio->image}}" class="img-fluid" alt="">
-                          <div class="portfolio-info">
-                              <h4>{{$portfolio->title}}</h4>
-                              <p>{{$portfolio->description}}</p>
-                              <a href="/image/{{$portfolio->image}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" ><i class="bx bx-plus"></i></a>
-                              <a href="{{ route('portfolio.show', ['id' => $portfolio->id]) }}" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-                          </div>
-                      </div>
-                  @endforeach
-              </div>            
+        <div class="portfolio-details-container">
+            <div class="portfolio-details-slider swiper-container">
+                <div class="swiper-wrapper align-items-center">
+                    <div class="swiper-slide">
+                        <img src="/image/{{$portfolio->image}}" alt="" class="img-fluid">
+                    </div>
+                    <!-- Add more slides if needed -->
+                </div>
+                <div class="swiper-pagination"></div>
             </div>
-          </div>
+
+            <div class="portfolio-info">
+                <h3>{{$portfolio->title}}</h3>
+                <p>{{$portfolio->description}}</p>
+            </div>
         </div>
-    
-      </div>
-    </section>
 
+    </div>
+</section><!-- End Portfolio Details Section -->
 
-
-  </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
@@ -177,8 +152,7 @@
   <a href="https://wa.me/6285659723324" class="back-to-top d-flex flex-column align-items-center justify-content-center" target="_blank">
     <i class="bi bi-whatsapp whatsapp-icon"></i>
     <span class="call-center-label">Call Center</span>
-</a>
-
+  </a>
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
