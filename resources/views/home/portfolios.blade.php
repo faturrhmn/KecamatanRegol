@@ -113,26 +113,24 @@
           <div class="col-lg-12">
             <div id="portfolio" class="" data-bs-ride="">
               <div class="row portfolio-container">
-                  @foreach ($portfolios as $portfolio)
-                      <div class="col-lg-4 col-md-6 portfolio-item">
-                          <img src="/image/{{$portfolio->image}}" class="img-fluid" alt="">
-                          <div class="portfolio-info">
-                              <h4>{{$portfolio->title}}</h4>
-                              <p>{{$portfolio->description}}</p>
-                              <a href="/image/{{$portfolio->image}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" ><i class="bx bx-plus"></i></a>
-                              <a href="{{ route('portfolio.show', ['id' => $portfolio->id]) }}" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-                          </div>
-                      </div>
-                  @endforeach
-              </div>            
+                @foreach ($portfolios->sortByDesc('created_at') as $portfolio)
+                  <div class="col-lg-4 col-md-6 portfolio-item">
+                    <img src="/image/{{$portfolio->image}}" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                      <h4>{{$portfolio->title}}</h4>
+                      {{-- <p>{{$portfolio->description}}</p> --}}
+                      <a href="/image/{{$portfolio->image}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"><i class="bx bx-plus"></i></a>
+                      <a href="{{ route('portfolio.show', ['id' => $portfolio->id]) }}" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                    </div>
+                  </div>
+                @endforeach
+              </div>
             </div>
           </div>
         </div>
-    
       </div>
     </section>
-
-
+    
 
   </main><!-- End #main -->
 

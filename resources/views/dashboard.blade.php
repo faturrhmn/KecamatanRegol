@@ -1,8 +1,8 @@
-@extends('layouts.app')
+@extends('layouts.modern')
 
 @section('title', 'Dashboard')
 
 
 @section('content')
-    <h1>selamat datang di admin regol juara</h1>    
+    <h1>Selamat datang di admin regol juara</h1>    
 @endsection

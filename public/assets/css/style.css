@@ -141,7 +141,7 @@ h6 {
 
 
 #header .logo {
-  font-size: 28px;
+  font-size: 16px;
   margin: 0;
   padding: 0;
   line-height: 1;
@@ -159,7 +159,7 @@ h6 {
 }
 
 #header .logo img {
-  max-height: 40px;
+  max-height: 27px;
 }
 
 /*--------------------------------------------------------------
@@ -188,8 +188,10 @@ h6 {
 
 @media (max-width: 768px) {
   .header-social-links {
-    padding: 0 15px 0 0;
+    padding: -20px 0 0 0;
+    margin-right: 40px;
     border-left: 0;
+    max-height: 10px;
   }
 }
 
@@ -201,6 +203,7 @@ h6 {
 */
 .navbar {
   padding: 0;
+
 }
 
 .navbar ul {
@@ -321,6 +324,8 @@ h6 {
   display: none;
   line-height: 0;
   transition: 0.5s;
+  position: absolute;
+  right: 1px;
 }
 
 .mobile-nav-toggle.bi-x {
@@ -700,7 +705,7 @@ section {
 
 @media (max-width: 991px) {
   .breadcrumbs {
-    margin-top: 58px;
+    margin-top: 30px;
   }
 
   .breadcrumbs .d-flex {
@@ -2161,6 +2166,105 @@ section {
   color: #aaaaaa;
   font-size: 14px;
 }
+
+/*--------------------------------------------------------------
+# Portfolio-Details
+--------------------------------------------------------------*/
+/* Portfolio Details Section */
+.portfolio-details {
+  padding: 60px 0;
+}
+
+.portfolio-details .section-title {
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 50px;
+}
+
+.portfolio-details .portfolio-details-images {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.portfolio-details .portfolio-details-images img {
+  max-width: 100%;
+  height: auto;
+}
+
+.portfolio-details .portfolio-info {
+  text-align: center;
+}
+
+.portfolio-details .portfolio-info h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.portfolio-details .portfolio-info p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.portfolio-details-content {
+  display: flex;
+  align-items: center;
+}
+
+.portfolio-details-image {
+  flex: 1;
+  margin-right: 30px; /* Untuk memberi jarak antara gambar dan deskripsi */
+}
+
+.portfolio-info {
+  flex: 1;
+}
+
+
+/* Styling for screens with width up to 768px */
+@media (max-width: 768px) {
+  .portfolio-details .portfolio-details-images {
+    margin-bottom: 20px;
+  }
+
+  .portfolio-details .portfolio-info h3 {
+    font-size: 24px;
+  }
+
+  .portfolio-details .portfolio-info p {
+    font-size: 14px;
+  }
+}
+
+
+/* Styling for screens with width up to 576px */
+@media (max-width: 576px) {
+  .portfolio-details-content {
+    flex-direction: column; /* Mengatur tata letak konten menjadi satu kolom di tampilan mobile */
+    align-items: center; /* Mengatur konten menjadi di tengah */
+  }
+
+  .portfolio-details-image {
+    margin-bottom: 15px; /* Memberikan jarak antara gambar dan deskripsi */
+    margin-left: 25px;
+  }
+
+  .portfolio-info {
+    text-align: center; /* Mengatur teks menjadi di tengah */
+  }
+
+  .portfolio-info h3 {
+    font-size: 22px;
+  }
+
+  .portfolio-info p {
+    font-size: 13px;
+  }
+}
+
+
+
+
 
 /*--------------------------------------------------------------
 # Footer

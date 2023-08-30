@@ -9,24 +9,27 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <!-- Favicons -->
-  <link href="assets/img/kota-bandung.png" rel="icon">
-
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Favicons -->
+    <link href="{{ asset('assets/img/kota-bandung.png') }}" rel="icon">
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  
+    <!-- Vendor CSS Files -->
+    <link href="{{ asset('assets/vendor/animate.css/animate.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/vendor/aos/aos.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/vendor/remixicon/remixicon.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+  
+    <!-- Template Main CSS File -->
+    <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Company
@@ -43,7 +46,7 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo me-auto"><img src="assets/img/kota-bandung.png"a href="/">Kecamatan Regol</a></h1>
+      <h1 class="logo me-auto"><img src="{{ asset('assets/img/kota-bandung.png') }}" a href="/">Kecamatan Regol</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -51,7 +54,7 @@
         <ul>
           <li><a href="/">Beranda</a></li>
 
-          <li class="dropdown"><a href="#"  class="active"><span>Pemerintahan</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="" ><span>Pemerintahan</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="about">Visi dan Misi</a></li>
               <li><a href="team">Struktur Organisasi</a></li>
@@ -69,7 +72,7 @@
             </ul>
           </li>
 
-          <li><a href="portfolio">Berita</a></li>
+          <li><a href="{{ url('/portfolio') }}" class="active">Berita</a></li>
           <li><a href="services">PPID</a></li>
           <li><a href="contact">Kontak</a></li>
 
@@ -87,28 +90,24 @@
     </div>
   </header><!-- End Header -->
 
-  <section id="portfolio-details" class="portfolio-details">
+  <section id="portfolio-details" class="portfolio-details section-bg">
     <div class="container">
-
-        <div class="portfolio-details-container">
-            <div class="portfolio-details-slider swiper-container">
-                <div class="swiper-wrapper align-items-center">
-                    <div class="swiper-slide">
-                        <img src="/image/{{$portfolio->image}}" alt="" class="img-fluid">
-                    </div>
-                    <!-- Add more slides if needed -->
-                </div>
-                <div class="swiper-pagination"></div>
-            </div>
-
-            <div class="portfolio-info">
-                <h3>{{$portfolio->title}}</h3>
-                <p>{{$portfolio->description}}</p>
-            </div>
+      <div class="section-title" data-aos="fade-up">
+        <h2>{{$portfolio->title}}</h2>
+      </div>
+    
+      <div class="portfolio-details-content d-flex">
+        <div class="portfolio-details-image">
+          <img src="/image/{{$portfolio->image}}" alt="" class="img-fluid">
         </div>
-
+        <div class="portfolio-info flex-grow-1">
+          <p>{{$portfolio->description}}</p>
+        </div>
+      </div>
     </div>
-</section><!-- End Portfolio Details Section -->
+  </section>
+  
+  
 
 
   <!-- ======= Footer ======= -->
@@ -119,7 +118,7 @@
         <div class="row">
 
         <div class="footer-contact">
-            <h1 class="logo me-auto"><img src="assets/img/kota-bandung.png" alt="Logo Kecamatan Regol" style="max-width: 50px;">Website Resmi Kecamatan Regol</a></h1>
+            <h1 class="logo me-auto"><img src="{{ asset('assets/img/kota-bandung.png') }}" alt="Logo Kecamatan Regol" style="max-width: 50px;">Website Resmi Kecamatan Regol</a></h1>
             <p>
                 {{ $contact ->alamat }}<br>
                 <strong>Phone: </strong> {{ $contact ->telepon }}<br>
@@ -154,17 +153,19 @@
     <span class="call-center-label">Call Center</span>
   </a>
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
+  <script src="{{ asset('assets/vendor/aos/aos.js') }}"></script>
+  <script src="{{ asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ asset('assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
+  <script src="{{ asset('assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+  <script src="{{ asset('assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
+  <script src="{{ asset('assets/vendor/waypoints/noframework.waypoints.js') }}"></script>
+  <script src="{{ asset('assets/vendor/php-email-form/validate.js') }}"></script>
+  
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="{{ asset('assets/js/main.js') }}"></script>
+  
 
 </body>
 
 </html>
+
