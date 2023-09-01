@@ -26,7 +26,15 @@
                 @error('description')
                     <small style="color:red">{{ $message }}</small>
                 @enderror
-                
+                <img src="/image/{{ $service->image }}" alt="" class="imgfluid">
+                <img src="/image{{ $service->image }}" alt="" class="src">
+                <div class="form-group">
+                    <label for="">Gambar</label>
+                    <input type="file" class="form-control" name="image">
+                </div>
+                @error('image')
+                    <small style="color:red">{{ $message }}</small>
+                @enderror
                 <div class="form-group">
                     <button type="submit" class="btn btn-primary btn-block">Submit</button>
                 </div>

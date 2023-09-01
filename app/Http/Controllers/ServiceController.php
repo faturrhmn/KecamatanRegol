@@ -31,15 +31,23 @@ class ServiceController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'title' => 'required','description' => 'required',
+            'title' => 'required',
+            'description' => 'required',
+            'image' => 'required|image',
         ]);
 
         $input = $request->all();
 
+        if ($image = $request->file('image')) {
+            $destinationPath = "image/";
+            $imageName = $image->getClientOriginalName();
+            $image->move($destinationPath, $imageName);
+            $input['image'] = $imageName;
+        }
+    
         Service::create($input);
 
         return redirect('/admin/services')->with('message', 'Data berhasil ditambahkan');
-
     }
 
     /**
@@ -47,7 +55,7 @@ class ServiceController extends Controller
      */
     public function show(Service $service)
     {
-        //
+        // Kode untuk menampilkan detail service jika diperlukan
     }
 
     /**
@@ -64,13 +72,23 @@ class ServiceController extends Controller
     public function update(Request $request, Service $service)
     {
         $request->validate([
-            'title' => 'required','description' => 'required',
+            'title' => 'required',
+            'description' => 'required',
+            'image' => 'image',
         ]);
 
         $input = $request->all();
 
-        $service->update($input);
+        if ($image = $request->file('image')) {
+            $destinationPath = "image/";
+            $imageName = $image->getClientOriginalName();
+            $image->move($destinationPath, $imageName);
+            $input['image'] = $imageName;
+        } else {
+            unset($input['image']);
+        }
 
+        $service->update($input);
 
         return redirect('/admin/services')->with('message', 'Data berhasil di edit');
     }
@@ -83,6 +101,5 @@ class ServiceController extends Controller
         $service->delete();
         
         return redirect('/admin/services')->with('message', 'Data berhasil di hapus');
-
     }
 }

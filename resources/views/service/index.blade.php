@@ -22,6 +22,7 @@
                     <th>NO</th>
                     <th>Judul</th>
                     <th>Deskripsi</th>
+                    <th>Gambar</th>
                     <th>Aksi</th>
                 </tr>
             </thead>
@@ -34,6 +35,9 @@
                     <td>{{ $i++ }}</td>
                     <td>{{$service->title}}</td>
                     <td>{{$service->description}}</td>
+                    <td>
+                        <img src="/image/{{$service->image}}" alt="" class="img-fluid" width="90">
+                    </td>
                     <td>
                         <a href="{{route('services.edit', $service->id) }}" class="btn btn-warning">Edit</a>
 
