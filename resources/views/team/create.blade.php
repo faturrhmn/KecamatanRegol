@@ -10,6 +10,13 @@
         <div class="col-md-12">
             <form action="{{ route('teams.store') }}" method="POST" enctype="multipart/form-data">
             @csrf
+            <div class="form-group">
+                <label for="">Judul</label>
+                <input type="text" class="form-control" name="title" placeholder="judul">
+            </div>
+            @error('title')
+                <small style="color:red">{{ $message }}</small>
+            @enderror
                 <div class="form-group">
                     <label for="">Gambar</label>
                     <input type="file" class="form-control" name="image">

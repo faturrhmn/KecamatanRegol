@@ -20,6 +20,7 @@
             <thead>
                 <tr>
                     <th>NO</th>
+                    <th>Judul</th>
                     <th>Gambar</th>
                     <th>Aksi</th>
                 </tr>
@@ -31,6 +32,8 @@
                 @foreach ($teams as $team)
                 <tr>
                     <td>{{ $i++ }}</td>
+                    <td>{{$team->title}}</td>
+                    <td>{{$team->image}}</td>
                     <td>
                         <img src="/image/{{$team->image}}" alt="" class="img-fluid" width="90">
                     </td>
@@ -42,6 +45,7 @@
                             @method('DELETE')
                             <button type="submit" class="btn btn-danger">Delete</button>
                         </form>
+                        
                     </td>
                 </tr>
                 @endforeach

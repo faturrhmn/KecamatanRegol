@@ -31,6 +31,7 @@ class TeamController extends Controller
     public function store(Request $request)
     {
         $request->validate([
+            'title' => 'required',
             'image' => 'required|image',
         ]);
 
@@ -71,6 +72,7 @@ class TeamController extends Controller
     public function update(Request $request, Team $team)
     {
         $request->validate([
+            'title' => 'required',
             'image' => 'image',
         ]);
 

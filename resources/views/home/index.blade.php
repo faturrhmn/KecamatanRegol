@@ -17,7 +17,18 @@
           <li class="dropdown"><a href="#"><span>Pemerintahan</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="about">Visi dan Misi</a></li>
-              <li><a href="team">Struktur Organisasi</a></li>
+              <li class="dropdown"><a href=""><span>Struktur Organisasi</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="team">Kecamatan Regol</a></li>
+                  <li><a href="#">Kelurahan Ancol</a></li>
+                  <li><a href="#">Kelurahan Balonggede</a></li>
+                  <li><a href="#">Kelurahan Cisereuh</a></li>
+                  <li><a href="#">Kelurahan Ciateul</a></li>
+                  <li><a href="#">Kelurahan Cigereleng</a></li>
+                  <li><a href="#">Kelurahan Pasirluyu</a></li>
+                  <li><a href="#">Kelurahan Pungkur</a></li>
+                </ul>
+              </li>
               <li><a href="testimonials">Tugas dan Fungsi</a></li>
               <li><a href="sejarah">Sejarah</a></li>
               {{-- <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>

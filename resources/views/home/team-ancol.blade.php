@@ -49,9 +49,9 @@
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a href="/">Beranda</a></li>
+          <li><a href="/" >Beranda</a></li>
 
-          <li class="dropdown"><a href="#"><span>Pemerintahan</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="#"  class="active"><span>Pemerintahan</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="about">Visi dan Misi</a></li>
               <li class="dropdown"><a href=""><span>Struktur Organisasi</span> <i class="bi bi-chevron-right"></i></a>
@@ -68,19 +68,11 @@
               </li>
               <li><a href="testimonials">Tugas dan Fungsi</a></li>
               <li><a href="sejarah">Sejarah</a></li>
-              {{-- <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li> --}}
+  
             </ul>
           </li>
 
-          <li><a href="portfolio" class="active">Berita</a></li>
+          <li><a href="portfolio">Berita</a></li>
           <li><a href="services">PPID</a></li>
           <li><a href="contact">Kontak</a></li>
 
@@ -98,6 +90,21 @@
     </div>
   </header><!-- End Header -->
 
+  <section id="team-ancol" class="team-ancol section-bg">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <h2>{{$team->title}}</h2>
+      </div>
+    
+      <div class="team-ancol-content d-flex">
+        <div class="team-ancol-image">
+          <img src="/image/{{$team->image}}" alt="" class="img-fluid">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <main id="main">
 
     <!-- ======= Breadcrumbs ======= -->
@@ -107,46 +114,34 @@
         <div class="d-flex justify-content-between align-items-center">
           <ol>
             <li><a href="index">Beranda</a></li>
-            <li>Berita</li>
+            <li>Struktur Organisasi</li>
           </ol>
         </div>
 
       </div>
     </section><!-- End Breadcrumbs -->
 
-    <section id="portfolio" class="portfolio">
+    <!-- ======= Our Team Section ======= -->
+    <section id="team" class="team section-bg">
       <div class="container">
         <div class="section-title" data-aos="fade-up">
-          <h2>Berita</h2>
+          <h2>STRUKTUR ORGANISASI</h2>
         </div>
-    
-        <div class="row">
-          <div class="col-lg-12">
-            <div id="portfolio" class="" data-bs-ride="">
-              <div class="row portfolio-container">
-                @foreach ($portfolios->sortByDesc('created_at') as $portfolio)
-                  <div class="col-lg-4 col-md-6 portfolio-item">
-                    <img src="/image/{{$portfolio->image}}" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                      <h4>{{$portfolio->title}}</h4>
-                      {{-- <p>{{$portfolio->description}}</p> --}}
-                      <a href="/image/{{$portfolio->image}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"><i class="bx bx-plus"></i></a>
-                      <a href="{{ route('portfolio.show', ['id' => $portfolio->id]) }}" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-                    </div>
-                  </div>
-                @endforeach
-              </div>
-            </div>
-          </div>
+
+        <div class="team-images">
+          @foreach ($teams as $team)
+              <img src="/image/{{ $team->image }}" class="img-fluid" alt="">
+
+          @endforeach
         </div>
+      
       </div>
-    </section>
-    
+    </section><!-- End Our Team Section -->
 
   </main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
+   <!-- ======= Footer ======= -->
+   <footer id="footer">
 
     <div class="footer-top">
       <div class="container">
@@ -187,7 +182,6 @@
     <i class="bi bi-whatsapp whatsapp-icon"></i>
     <span class="call-center-label">Call Center</span>
 </a>
-
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

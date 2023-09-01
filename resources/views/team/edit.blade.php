@@ -11,6 +11,10 @@
             <form action="{{ route('teams.update', $team->id) }}" method="POST" enctype="multipart/form-data">
                 @method('PUT')
             @csrf
+            <div class="form-group">
+                <label for="">Judul</label>
+                <input type="text" class="form-control" name="title" placeholder="judul" value="{{ $team->title }}">
+            </div>
                 <img src="/image/{{ $team->image }}" alt="" class="imgfluid">
                 <img src="/image{{ $team->image }}" alt="" class="src">
                 <div class="form-group">
