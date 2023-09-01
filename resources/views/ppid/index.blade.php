@@ -35,7 +35,7 @@
                     <td>{{$ppid->title}}</td>
                     <td>{{$ppid->file}}</td>
                     <td>
-                        <a href="{{route('ppids.edit', $ppid->id) }}" class="btn btn-warning">Edit</a>
+                        <a href="{{route('ppids.edit', $ppid->id) }}" class="btn btn-warning mb-2">Edit</a>
 
                         <form action="{{ route('ppids.destroy', $ppid->id) }}" method="POST">
                             @csrf

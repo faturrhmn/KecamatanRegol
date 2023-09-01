@@ -119,5 +119,14 @@ class HomeController extends Controller
     
         return view('home.portfolio-details', compact('portfolio', 'contact'));
     }
+
+    public function showteam($id)
+    {
+        $team = Team::findOrFail($id);
+        $contact = Contact::first(); // Pastikan Anda memiliki Contact model dan data
+    
+        return view('home.team-details', compact('team', 'contact'));
+    }
+
     
 }

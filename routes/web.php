@@ -26,6 +26,7 @@ Route::get('/testimonials', [HomeController::class,'testimonials']);
 Route::get('/sejarah', [HomeController::class,'showsejarah']);
 Route::get('/ifografi', [HomeController::class,'ifografi']);
 Route::get('/portfolio/{id}', [HomeController::class,'showportfolio'])->name('portfolio.show');
+Route::get('/team/{id}', [HomeController::class,'showteam'])->name('team.show');
 
 //auth
 Route::get('/login', [AuthController::class,'login'])->name('login');

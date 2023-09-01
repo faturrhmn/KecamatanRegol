@@ -39,7 +39,7 @@
                         <img src="/image/{{$service->image}}" alt="" class="img-fluid" width="90">
                     </td>
                     <td>
-                        <a href="{{route('services.edit', $service->id) }}" class="btn btn-warning">Edit</a>
+                        <a href="{{route('services.edit', $service->id) }}" class="btn btn-warning mb-2">Edit</a>
 
                         <form action="{{ route('services.destroy', $service->id) }}" method="POST">
                             @csrf

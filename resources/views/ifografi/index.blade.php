@@ -35,7 +35,7 @@
                         <img src="/image/{{$ifografi->image}}" alt="" class="img-fluid" width="90">
                     </td>
                     <td>
-                        <a href="{{route('ifografis.edit', $ifografi->id) }}" class="btn btn-warning">Edit</a>
+                        <a href="{{route('ifografis.edit', $ifografi->id) }}" class="btn btn-warning mb-2">Edit</a>
 
                         <form action="{{ route('ifografis.destroy', $ifografi->id) }}" method="POST">
                             @csrf

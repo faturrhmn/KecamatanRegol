@@ -39,7 +39,7 @@
                         <img src="/image/{{$client->image}}" alt="" class="img-fluid" width="90">
                     </td>
                     <td>
-                        <a href="{{route('clients.edit', $client->id) }}" class="btn btn-warning">Edit</a>
+                        <a href="{{route('clients.edit', $client->id) }}" class="btn btn-warning mb-2">Edit</a>
 
                         <form action="{{ route('clients.destroy', $client->id) }}" method="POST">
                             @csrf
