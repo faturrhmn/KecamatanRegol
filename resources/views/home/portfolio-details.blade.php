@@ -52,13 +52,14 @@
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a href="/">Beranda</a></li>
+          <li><a href="{{ url('/') }}">Beranda</a></li>
 
           <li class="dropdown"><a href="" ><span>Pemerintahan</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="about">Visi dan Misi</a></li>
-              <li class="dropdown"><a href=""><span>Struktur Organisasi</span> <i class="bi bi-chevron-right"></i></a>
+              <li><a href="{{ url('/about') }}">Visi dan Misi</a></li>
+              <li class="dropdown"><a href="" ><span>Struktur Organisasi</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
+               
                   <li><a href="{{ route('team.show', ['id' => 1]) }}">Kecamatan Regol</a></li>
                   <li><a href="{{ route('team.show', ['id' => 2]) }}">Kelurahan Ancol</a></li>
                   <li><a href="{{ route('team.show', ['id' => 3]) }}">Kelurahan Balonggede</a></li>
@@ -67,10 +68,11 @@
                   <li><a href="{{ route('team.show', ['id' => 6]) }}">Kelurahan Cigereleng</a></li>
                   <li><a href="{{ route('team.show', ['id' => 7]) }}">Kelurahan Pasirluyu</a></li>
                   <li><a href="{{ route('team.show', ['id' => 8]) }}">Kelurahan Pungkur</a></li>
+    
                 </ul>
               </li>
-              <li><a href="testimonials">Tugas dan Fungsi</a></li>
-              <li><a href="sejarah">Sejarah</a></li>
+              <li><a href="{{ url('/testimonials') }}">Tugas dan Fungsi</a></li>
+              <li><a href="{{ url('/sejarah') }}">Sejarah</a></li>
               {{-- <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
                   <li><a href="#">Deep Drop Down 1</a></li>
@@ -84,8 +86,8 @@
           </li>
 
           <li><a href="{{ url('/portfolio') }}" class="active">Berita</a></li>
-          <li><a href="services">PPID</a></li>
-          <li><a href="contact">Kontak</a></li>
+          <li><a href="{{ url('/services') }}">PPID</a></li>
+          <li><a href="{{ url('/contact') }}">Kontak</a></li>
 
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -100,6 +102,21 @@
 
     </div>
   </header><!-- End Header -->
+
+      <!-- ======= Breadcrumbs ======= -->
+      <section id="breadcrumbs" class="breadcrumbs">
+        <div class="container">
+  
+          <div class="d-flex justify-content-between align-items-center">
+  
+            <ol>
+              <li><a href="/">Beranda</a></li>
+              <li>Berita</li>
+            </ol>
+          </div>
+  
+        </div>
+      </section><!-- End Breadcrumbs -->
 
   <section id="portfolio-details" class="portfolio-details section-bg">
     <div class="container">

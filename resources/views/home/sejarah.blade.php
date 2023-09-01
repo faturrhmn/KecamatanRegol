@@ -106,7 +106,7 @@
 
         <div class="d-flex justify-content-between align-items-center">
           <ol>
-            <li><a href="index">Beranda</a></li>
+            <li><a href="/">Beranda</a></li>
             <li>Sejarah</li>
           </ol>
         </div>
@@ -125,9 +125,9 @@
           <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left">
             <h3>Kedudukan dan Struktur SKPD</h3>
             <p class="fst-italic">
-              <p>Latar Belakang :   Penyelenggaraan tugas umum pemerintahan di amanatkan dalam undang undang 23 tahun 2014 tentang pemerintahan daerah yang terdiri dari Sekretriat Daerah, Sekretariat DPRD, Dinas Daerah, Lembaga Teknis Daerah, Kecamatan dan Kelurahan.</p>
-              <p>Kecamatan sebagai salah satu prangkat daerah berpedoman pada Peraturan Pemerintah No 19 tahun 2008 tentang Kecamatan sebagai pelaksana teknis Kewilayahan yang mempunyai wilayah kerja tertentu dan dipimpin oleh Camat.</p>
-              <p>Kecamatan Regol yang memiliki luas wilayah 430 H terbagi dalam 7 Kelurahan, 60 RW, dan 373 RT. Adapun Kelurahan kelurahan yang ada di Wilayah Kecamatan Regol mepliputi </p>
+              <p class="paragraph">Latar Belakang :   Penyelenggaraan tugas umum pemerintahan di amanatkan dalam undang undang 23 tahun 2014 tentang pemerintahan daerah yang terdiri dari Sekretriat Daerah, Sekretariat DPRD, Dinas Daerah, Lembaga Teknis Daerah, Kecamatan dan Kelurahan.</p>
+              <p class="paragraph">Kecamatan sebagai salah satu prangkat daerah berpedoman pada Peraturan Pemerintah No 19 tahun 2008 tentang Kecamatan sebagai pelaksana teknis Kewilayahan yang mempunyai wilayah kerja tertentu dan dipimpin oleh Camat.</p>
+              <p class="paragraph">Kecamatan Regol yang memiliki luas wilayah 430 H terbagi dalam 7 Kelurahan, 60 RW, dan 373 RT. Adapun Kelurahan kelurahan yang ada di Wilayah Kecamatan Regol mepliputi </p>
                 <li>Kelurah Pasirluyu</li>
                 <li>Kelurahan Ancol</li>
                 <li>Kelurahan Cigereleng</li>
@@ -136,9 +136,10 @@
                 <li>Kelurahan Balonggede </li>
                 <li>Kelurahan Ciateul</li>
             </p>
+            <hr>
             <h3>Sejarah</h3>
             <p class="fst-italic">
-                <p>Sebelum menjadi Kecamatan, Regol adalah Kelurahan yang terletak di Jalan Moch Ramdhan. Karena adanya pemekaran, Regol menjadi sebuah kecamatan dengan terbagi dalam 3 Kelurahan, Antara Lain Kelurahan Ciateul, Kelurahan Pungkur, dan Balonggede dan sekarang menjadi 7 Kelurahan ditambah dengan Kelurahan Pasirluyu, Kelurahan Cigereleng, Kelurahan Ciseureuh dan Kelurahan Ancol</p>
+                <p class="paragraph">Sebelum menjadi Kecamatan, Regol adalah Kelurahan yang terletak di Jalan Moch Ramdhan. Karena adanya pemekaran, Regol menjadi sebuah kecamatan dengan terbagi dalam 3 Kelurahan, Antara Lain Kelurahan Ciateul, Kelurahan Pungkur, dan Balonggede dan sekarang menjadi 7 Kelurahan ditambah dengan Kelurahan Pasirluyu, Kelurahan Cigereleng, Kelurahan Ciseureuh dan Kelurahan Ancol</p>
             </p>
           </div>
         </div>
