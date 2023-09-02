@@ -41,6 +41,22 @@
 
     @yield('content')
 
+<div class="loader">
+	<span class="loader span"></span>
+	<span class="loader span:nth-child(1)"></span>
+	<span class="loader span:nth-child(2)"></span>
+	<span class="loader span:nth-child(3)"></span>
+	<span class="loader span:nth-child(4)"></span>
+</div>
+</div>
+
+<script>
+  $(window).on("load",function(){
+    $(".loader").fadeOut("slow");
+  });
+</script>
+
+
    <!-- ======= Footer ======= -->
    <footer id="footer">
 
