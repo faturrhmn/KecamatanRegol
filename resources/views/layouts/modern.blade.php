@@ -54,6 +54,14 @@
               </a>
             </li>
             <li class="sidebar-item">
+              <a class="sidebar-link" href="/admin/profils" aria-expanded="false">
+                <span>
+                  <i class="ti ti-file-description"></i>
+                </span>
+                <span class="hide-menu">Data Profil</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
               <a class="sidebar-link" href="/admin/services" aria-expanded="false">
                 <span>
                   <i class="ti ti-file-description"></i>

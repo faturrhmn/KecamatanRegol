@@ -13,6 +13,7 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\PpidController;
 use App\Http\Controllers\IfografiController;
+use App\Http\Controllers\ProfilController;
 use Illuminate\support\Facades\Route;
 
 
@@ -25,6 +26,7 @@ Route::get('/team', [HomeController::class,'team']);
 Route::get('/testimonials', [HomeController::class,'testimonials']);
 Route::get('/sejarah', [HomeController::class,'showsejarah']);
 Route::get('/ifografi', [HomeController::class,'ifografi']);
+Route::get('/profil', [HomeController::class,'profil']);
 Route::get('/portfolio/{id}', [HomeController::class,'showportfolio'])->name('portfolio.show');
 Route::get('/team/{id}', [HomeController::class,'showteam'])->name('team.show');
 
@@ -46,6 +48,7 @@ Route::prefix('/admin')->middleware('auth')->group(function(){
     Route::resource('teams', TeamController::class);
     Route::resource('ppids', PpidController::class);
     Route::resource('ifografis', IfografiController::class);
+    Route::resource('profils', ProfilController::class);
 
     
     
