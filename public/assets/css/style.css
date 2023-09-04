@@ -243,11 +243,11 @@ h6 {
 
 #header .logo a {
   color: #111;
+  margin-left: 10px;
 }
 
 #header .logo a span {
   color: #1bbd36;
-  margin-left: 5px;
 }
 
 #header .logo img {
@@ -263,13 +263,13 @@ h6 {
   }
 
   #header .logo {
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 20px;
     /* Ukuran font logo lebih kecil pada mobile */
   }
 
   #header .logo img {
-    max-height: 30px;
+    max-height: 20px;
     /* Ukuran maksimum gambar logo pada mobile */
   }
 }
@@ -280,7 +280,7 @@ h6 {
 # Header Social Links
 --------------------------------------------------------------*/
 .header-social-links {
-  margin-left: 10px;
+  margin-left: 0px;
   border-left: 1px solid #c4c4c4;
 }
 
@@ -304,6 +304,7 @@ h6 {
   .header-social-links {
     padding: 0 15px 0 0;
     border-left: 0;
+    margin-top: 5px;
   }
 }
 
@@ -695,20 +696,14 @@ h6 {
   }
 }
 
+/* Gaya untuk tampilan mobile (lebar layar kurang dari 992px) */
 @media (max-width: 992px) {
-  #hero .carousel-container {
-    top: 58px;
-  }
-
-  #hero .carousel-content h2 {
-    margin-bottom: 15px;
-    font-size: 22px;
-  }
-
-  #hero .carousel-content p {
-    font-size: 15px;
+  #hero {
+    display: none;
+    /* Sembunyikan seluruh bagian hero */
   }
 }
+
 
 
 /*--------------------------------------------------------------
@@ -1157,8 +1152,9 @@ section {
   font-weight: 700;
   font-size: 42px;
   line-height: 60px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   text-transform: uppercase;
+  margin-top: 40px;
 }
 
 .about-us .content h3 {
