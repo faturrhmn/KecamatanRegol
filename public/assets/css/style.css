@@ -14,6 +14,101 @@ body {
   color: #4d4643;
 }
 
+.loader
+{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 100px;
+    height: 100px;
+    animation: animate 1s linear infinite;
+}
+.loader span
+{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: #f00;
+    animation: rotate 1s linear infinite;
+}
+.loader span:nth-child(1)
+{
+    top: 0;
+    left: 0;
+    background: #f79f1f;
+}
+.loader span:nth-child(2)
+{
+    top: 0;
+    right: 0;
+    background: #12cbc4;
+}
+.loader span:nth-child(3)
+{
+    bottom: 0;
+    left: 0;
+    background: #ed4c67;
+}
+.loader span:nth-child(4)
+{
+    bottom: 0;
+    right: 0;
+    background: #a3cb38;
+}
+@keyframes animate
+{
+    0%
+    {
+        width: 100px;
+        height: 100px;
+    }
+    10%
+    {
+        width: 100px;
+        height: 100px;
+    }
+    50%
+    {
+        width: 150px;
+        height: 150px;
+    }
+    90%
+    {
+        width: 100px;
+        height: 100px;
+    }
+    100%
+    {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@keyframes rotate
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    10%
+    {
+        transform: rotate(0deg);
+    }
+    60%
+    {
+        transform: rotate(90deg);
+    }
+    90%
+    {
+        transform: rotate(90deg);
+    }
+    100%
+    {
+        transform: rotate(90deg);
+    }
+}
+
 a {
   color: #1bbd36;
   text-decoration: none;
@@ -58,8 +153,7 @@ h6 {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  text-align: center;
-  /* Mengatur tata letak teks menjadi tengah */
+  text-align: center; /* Mengatur tata letak teks menjadi tengah */
 }
 
 .back-to-top i {
@@ -71,11 +165,9 @@ h6 {
 .back-to-top .call-center-label {
   font-size: 18px;
   color: #fff;
-  text-align: center;
-  /* Teks berada di tengah */
+  text-align: center; /* Teks berada di tengah */
   margin-top: 5px;
-  display: block;
-  /* Tampilkan terus, bahkan jika tombol tersembunyi */
+  display: block; /* Tampilkan terus, bahkan jika tombol tersembunyi */
 }
 
 .back-to-top:hover {
@@ -138,15 +230,13 @@ h6 {
 }
 
 #header .logo-image {
-  max-width: 100px;
-  /* Atur lebar maksimum gambar */
-  height: auto;
-  /* Biarkan tinggi menyesuaikan agar proporsi gambar tidak terdistorsi */
+  max-width: 100px; /* Atur lebar maksimum gambar */
+  height: auto; /* Biarkan tinggi menyesuaikan agar proporsi gambar tidak terdistorsi */
 }
 
 
 #header .logo {
-  font-size: 24px;
+  font-size: 16px;
   margin: 0;
   padding: 0;
   line-height: 1;
@@ -164,27 +254,7 @@ h6 {
 }
 
 #header .logo img {
-  max-height: 35px;
-}
-
-/* Gaya CSS untuk Tampilan Mobile */
-@media (max-width: 768px) {
-  #header .logo {
-    font-size: 16px;
-    /* Ubah ukuran font untuk perangkat mobile */
-    text-align: justify;
-    /* Tengahkan teks logo */
-  }
-
-  #header .logo a {
-    color: #1bbd36;
-    /* Ganti warna teks menjadi warna yang sama dengan span */
-  }
-
-  #header .logo img {
-    max-height: 30px;
-    /* Mengurangi ukuran gambar logo untuk perangkat mobile */
-  }
+  max-height: 27px;
 }
 
 /*--------------------------------------------------------------
@@ -640,16 +710,15 @@ section {
 
 .section-title {
   text-align: center;
-  padding-bottom: 20px;
-  padding-top: 10px;
+  padding-bottom: 30px;
 }
 
 .section-title h2 {
   font-size: 32px;
   font-weight: bold;
   text-transform: uppercase;
-  margin-bottom: 10px;
-  padding-bottom: 10px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
   position: relative;
 }
 
@@ -675,7 +744,7 @@ section {
   padding: 15px 0;
   background: #1bbd36;
   min-height: 40px;
-  margin-top: 42px;
+  margin-top: 72px;
 }
 
 
@@ -1121,8 +1190,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  /* Ini opsional, mengatur tinggi div sesuai kebutuhan */
+  height: 100vh; /* Ini opsional, mengatur tinggi div sesuai kebutuhan */
 }
 
 .team-images img {
@@ -2223,8 +2291,7 @@ section {
 
 .portfolio-details-image {
   flex: 1;
-  margin-right: 30px;
-  /* Untuk memberi jarak antara gambar dan deskripsi */
+  margin-right: 30px; /* Untuk memberi jarak antara gambar dan deskripsi */
 }
 
 .portfolio-info {
@@ -2251,21 +2318,17 @@ section {
 /* Styling for screens with width up to 576px */
 @media (max-width: 576px) {
   .portfolio-details-content {
-    flex-direction: column;
-    /* Mengatur tata letak konten menjadi satu kolom di tampilan mobile */
-    align-items: center;
-    /* Mengatur konten menjadi di tengah */
+    flex-direction: column; /* Mengatur tata letak konten menjadi satu kolom di tampilan mobile */
+    align-items: center; /* Mengatur konten menjadi di tengah */
   }
 
   .portfolio-details-image {
-    margin-bottom: 15px;
-    /* Memberikan jarak antara gambar dan deskripsi */
+    margin-bottom: 15px; /* Memberikan jarak antara gambar dan deskripsi */
     margin-left: 25px;
   }
 
   .portfolio-info {
-    text-align: center;
-    /* Mengatur teks menjadi di tengah */
+    text-align: center; /* Mengatur teks menjadi di tengah */
   }
 
   .portfolio-info h3 {
