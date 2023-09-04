@@ -99,6 +99,53 @@
 
   <main id="main">
 
+
+    <div class="container">
+      @foreach ($profils as $profil)
+      <div class="section-title" data-aos="fade-up">
+        <h2>{{ $profil->title }}</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <p data-aos="fade-up" data-aos-delay="400">{{ $profil->description }}</p>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay="200">
+          <img src="image/{{ $profil->image }}" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
+    @endforeach
+
+    {{-- <section id="profil" class="profil section-bg">
+      <div class="container">
+        @foreach ($profils as $profil)
+          <div class="section-title" data-aos="fade-up">
+            <h2>{{ $profil->title }}</h2>
+          </div>
+          <div class="profil-item">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="image-container">
+                  <img src="image/{{ $profil->image }}" class="img-fluid" alt="">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="profil-content">
+                  <p class="profil-paragraph">{{ $profil->description }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        @endforeach
+      </div>
+    </section> --}}
+    
+    
+    
+    
+
+
+
     <!-- ======= About Us Section ======= -->
     <section id="about-us" class="about-us">
       <div class="container" data-aos="fade-up">
