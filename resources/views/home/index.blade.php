@@ -63,6 +63,7 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="hero">
+
     <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
       <div class="carousel-inner" role="listbox">
@@ -93,6 +94,7 @@
       <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
 
     </div>
+    
   </section><!-- End Hero -->
 
   <main id="main">
@@ -134,23 +136,25 @@
 
     <div class="row">
       @foreach ($latestPortfolios as $portfolio)
-        <div class="col-lg-4 col-md-6 portfolio-item">
-          <img src="/image/{{$portfolio->image}}" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>{{$portfolio->title}}</h4>
-            {{-- <p>{{$portfolio->description}}</p> --}}
-            <a href="/image/{{$portfolio->image}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" ><i class="bx bx-plus"></i></a>
-            <a href="{{ route('portfolio.show', ['id' => $portfolio->id]) }}" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+        <div class="col-lg-4 col-md-6">
+          <div class="card mb-4">
+            <img src="/image/{{$portfolio->image}}" class="card-img-top" alt="{{$portfolio->title}}">
+            <div class="card-body">
+              <h5 class="card-title">{{$portfolio->title}}</h5>
+              {{-- <p class="card-text">{{$portfolio->description}}</p> --}}
+            </div>
+            <div class="card-footer">
+              <a href="/image/{{$portfolio->image}}" data-gallery="portfolioGallery" class="btn btn-primary portfolio-lightbox preview-link"><i class="bx bx-plus"></i> View Image</a>
+              <a href="{{ route('portfolio.show', ['id' => $portfolio->id]) }}" class="btn btn-secondary details-link" title="More Details"><i class="bx bx-link"></i> More Details</a>
+            </div>
           </div>
         </div>
       @endforeach
     </div>
+    
   </div>
 </section>
 <!-- ======= End Portfolio Terbaru ======= -->
-
-
-
 
     <!-- ======= Services Section ======= -->
     <section id="services" class="services section-bg">
