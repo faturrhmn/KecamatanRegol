@@ -13,6 +13,7 @@ use App\Models\Client;
 use App\Models\Team;
 use App\Models\Ppid;
 use App\Models\Ifografi;
+use App\Models\Profil;
 
 class HomeController extends Controller
 {
@@ -27,6 +28,7 @@ class HomeController extends Controller
         $contact = Contact::first();
         $ppids = Ppid::all();
         $ifografis = Ifografi::all();
+        $profils = Profil::all();
         
 
 
@@ -40,6 +42,7 @@ class HomeController extends Controller
            'contact',
            'ppids',
            'ifografis',
+           'profils',
         ));
     }
 

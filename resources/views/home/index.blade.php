@@ -128,6 +128,29 @@
     </section><!-- End About Us Section -->
 
 
+    @foreach ($profils as $profil)
+    <section id="profil" class="profil section-bg">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>{{ $profil->title }}</h2>
+            </div>
+
+            <div class="profil-content d-flex">
+                <div class="profil-image">
+                    <img src="/image/{{ $profil->image }}" alt="" class="img-fluid">
+                </div>
+                <div class="profil-info flex-grow-1">
+                  <div class="container">
+                      <p>{{ $profil->description }}</p>
+                  </div>
+              </div>
+              
+            </div>
+        </div>
+    </section>
+@endforeach
+
+    
     
    <!-- ======= Portfolio Terbaru ======= -->
 <section id="latest-portfolio" class="latest-portfolio">
