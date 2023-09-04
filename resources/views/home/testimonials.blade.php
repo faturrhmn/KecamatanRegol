@@ -120,7 +120,7 @@
 
         <div class="d-flex justify-content-between align-items-center">
           <ol>
-            <li><a href="index">Beranda</a></li>
+            <li><a href="/">Beranda</a></li>
             <li>Tugas dan Fungsi</li>
           </ol>
         </div>
@@ -137,28 +137,28 @@
                 <h2>Tugas dan Fungsi</h2>
               </div>
               <div class="col-lg-6 pt-4 pt-lg-0">
-                <p>
+                <p class="paragraph">
                   Sebagai institusi formal, keberadaan dan operasional Kecamtan Regol senantiasa mengacu kepada landasan hukum pembentukan Kecamatan yang berlaku yaitu :
                 </p>
                 <p class="fst-italic">
-                  <li>Undang-undang No.23 Tahun 2014 Tentang Pemerintahan Daerah</li>
-                  <li>Peraturan Pemerintah RI No.19 Tahun 2008 Tentang Kecamatan</li>
-                  <li>Peraturan Daerah Kota Bandung No.6 Tahun 2006 Tentang Pemekaran dan Pembentukan Wilayah Kerja Kecamatan dan Kelurahan di Lingkungan Pemerintah Kota Bandung.</li>
-                  <li>Peraturan Daerah Kota Bandung No.6 Tahun 2006 Tentang Pemekaran dan Pembentukan Wilayah Kerja Kecamatan dan Kelurahan di Lingkungan Pemerintah Kota Bandung.</li>
-                  <li>Peraturan Walikota Bandung No. 1407 Tahun 2016 Tentang Kedudukan, Susunan Organisasi, Tugas dan Fungsi Serta Tata Kerja Kecamatan dan Kelurahan di Lingkungan Pemerintahan Kota Bandung.</li>
+                  <li class="paragraph">Undang-undang No.23 Tahun 2014 Tentang Pemerintahan Daerah</li>
+                  <li class="paragraph">Peraturan Pemerintah RI No.19 Tahun 2008 Tentang Kecamatan</li>
+                  <li class="paragraph">Peraturan Daerah Kota Bandung No.6 Tahun 2006 Tentang Pemekaran dan Pembentukan Wilayah Kerja Kecamatan dan Kelurahan di Lingkungan Pemerintah Kota Bandung</li>
+                  <li class="paragraph">Peraturan Daerah Kota Bandung No.6 Tahun 2006 Tentang Pemekaran dan Pembentukan Wilayah Kerja Kecamatan dan Kelurahan di Lingkungan Pemerintah Kota Bandung</li>
+                  <li class="paragraph">Peraturan Walikota Bandung No. 1407 Tahun 2016 Tentang Kedudukan, Susunan Organisasi, Tugas dan Fungsi Serta Tata Kerja Kecamatan dan Kelurahan di Lingkungan Pemerintahan Kota Bandung</li>
                 </p>
-
-                <p>
+                <hr>
+                <p class="paragraph">
                   Selanjutnya, kecamatan sebagi Prangkat Daerah menyelenggarakan sebagai tugas Umum Pemerintahan yang meliputi :
                 </p>
                 <p class="fst-italic">
-                  <li>Mengkoordinasikan Kegiatan Pemberdayaan Masyarakat</li>
-                  <li>Mengkoordinasikan Upaya Penyelenggaraan Ketentraman dan Ketertiban Umum</li>
-                  <li>Mengkoordinasikan Penerapan dan Penegakan Peraturan Perundang undangan</li>
-                  <li>mengkoordinasikan pemeliharaan prasarana dan pasilitas pelayanan umum</li>
-                  <li>Mengkoordinasikan penyelenggaran kegiatan pemerintahan di tingkat Kecamatan</li>
-                  <li>Membina Penyelenggaraan Pemerintahan Desa dan/atau Kelurahan; dan </li>
-                  <li>Melaksakan pelayanan Masyarakat yang menjadi ruang lingkup tugasnya dan/atau yang belum dapat dilaksankan pemerintahan desa dan kelurahan.</li>
+                  <li class="paragraph">Mengkoordinasikan Kegiatan Pemberdayaan Masyarakat</li>
+                  <li class="paragraph">Mengkoordinasikan Upaya Penyelenggaraan Ketentraman dan Ketertiban Umum</li>
+                  <li class="paragraph">Mengkoordinasikan Penerapan dan Penegakan Peraturan Perundang undangan</li>
+                  <li class="paragraph">mengkoordinasikan pemeliharaan prasarana dan pasilitas pelayanan umum</li>
+                  <li class="paragraph">Mengkoordinasikan penyelenggaran kegiatan pemerintahan di tingkat Kecamatan</li>
+                  <li class="paragraph">Membina Penyelenggaraan Pemerintahan Desa dan/atau Kelurahan; dan </li>
+                  <li class="paragraph">Melaksakan pelayanan Masyarakat yang menjadi ruang lingkup tugasnya dan/atau yang belum dapat dilaksankan pemerintahan desa dan kelurahan</li>
                 </p>
 
               </div>

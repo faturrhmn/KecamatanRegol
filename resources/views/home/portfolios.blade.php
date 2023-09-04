@@ -121,7 +121,7 @@
 
         <div class="d-flex justify-content-between align-items-center">
           <ol>
-            <li><a href="index">Beranda</a></li>
+            <li><a href="/">Beranda</a></li>
             <li>Berita</li>
           </ol>
         </div>

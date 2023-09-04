@@ -80,6 +80,7 @@
                   <li><a href="{{ route('team.show', ['id' => 6]) }}">Kelurahan Cigereleng</a></li>
                   <li><a href="{{ route('team.show', ['id' => 7]) }}">Kelurahan Pasirluyu</a></li>
                   <li><a href="{{ route('team.show', ['id' => 8]) }}">Kelurahan Pungkur</a></li>
+      
                 </ul>
               </li>
               <li><a href="testimonials">Tugas dan Fungsi</a></li>
@@ -122,7 +123,7 @@
 
         <div class="d-flex justify-content-between align-items-center">
           <ol>
-            <li><a href="index">Beranda</a></li>
+            <li><a href="/">Beranda</a></li>
             <li>Visi dan Misi</li>
           </ol>
         </div>
@@ -139,20 +140,17 @@
             <h2>Visi dan Misi</h2>
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left">
-            <p class="paragraph">
-              Visi dan misi kecamatan Regol merupakan hasil rumusan dan analisis lingkungan organisasi Kecamatan Regol. Adapun visi Kecamatan Regol Yaitu :
-            </p>
+            Visi dan misi kecamatan Regol merupakan hasil rumusan dan analisis lingkungan organisasi Kecamatan Regol. Adapun visi Kecamatan Regol Yaitu :
+            <hr>
             <h3>Visi</h3>
             <p class="fst-italic" >
-              <li><p class="paragraph">Terwujudnya Pelayanan yang Prima menuju Masyarakat Maju dan Sejahtera di Kecamatan Regol Kota Bandung</p></li>
+              <li class="paragraph">Terwujudnya Pelayanan yang Prima menuju Masyarakat Maju dan Sejahtera di Kecamatan Regol Kota Bandung</li> 
+              <br>
             <h3>Misi</h3>
             <p class="fst-italic">    
-              <li>
-                <p class="paragraph">Mewujudkan Pelayanan Publik yang profesional dan berbasis teknologi informasi</p>
-              </li>
-              <li>
-                <p class="paragraph">Meningkatkan kinerja pemerintah kecamatan dan kelurahan yang efektif, efisien, akuntabel dan transparan</p>
-              </li>
+              <li class="paragraph">Mewujudkan Pelayanan Publik yang profesional dan berbasis teknologi informasi</li>
+              <li class="paragraph">Meningkatkan kinerja pemerintah kecamatan dan kelurahan yang efektif, efisien, akuntabel dan transparan</li>
+              
             </p>
           </div>
         </div>
