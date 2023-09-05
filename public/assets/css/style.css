@@ -84,8 +84,9 @@ h6 {
   text-align: justify; /* Mengatur rata kanan kiri */
 }
 
-
-
+.profil-image {
+  max-height: 50;
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/

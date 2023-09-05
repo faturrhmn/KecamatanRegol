@@ -130,7 +130,7 @@
             <div class="row">
               <div class="col-lg-6">
                 <div class="image-container">
-                  <img src="image/{{ $profil->image }}" class="img-fluid" alt="">
+                  <img src="image/{{ $profil->image }}" class="img-fluid" alt="" style="max-width: 50%; height: auto; margin-left: 100px;">
                 </div>
               </div>
               <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left">
