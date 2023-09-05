@@ -15,7 +15,7 @@
                 <label for="">Judul</label>
                 <input type="text" class="form-control" name="title" placeholder="judul" value="{{ $team->title }}">
             </div>
-                <img src="/image/{{ $team->image }}" alt="" class="imgfluid">
+                <img src="/image/{{ $team->image }}" alt="" class="img-fluid mt-3" style="max-width: 100%; max-height: 300px;">
                 <img src="/image{{ $team->image }}" alt="" class="src">
                 <div class="form-group">
                     <label for="">Gambar</label>

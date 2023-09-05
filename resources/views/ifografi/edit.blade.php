@@ -11,7 +11,7 @@
             <form action="{{ route('ifografis.update', $ifografi->id) }}" method="POST" enctype="multipart/form-data">
                 @method('PUT')
             @csrf
-                <img src="/image/{{ $ifografi->image }}" alt="" class="imgfluid">
+                <img src="/image/{{ $ifografi->image }}" alt="" class="img-fluid mt-3" style="max-width: 100%; max-height: 300px;">
                 <img src="/image{{ $ifografi->image }}" alt="" class="src">
                 <div class="form-group">
                     <label for="">Gambar</label>

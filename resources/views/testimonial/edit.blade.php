@@ -26,7 +26,7 @@
                 @error('description')
                     <small style="color:red">{{ $message }}</small>
                 @enderror
-                <img src="/image/{{ $testimonial->image }}" alt="" class="imgfluid">
+                <img src="/image/{{ $testimonial->image }}" alt="" class="img-fluid mt-3" style="max-width: 100%; max-height: 300px;">
                 <img src="/image{{ $testimonial->image }}" alt="" class="src">
                 <div class="form-group">
                     <label for="">Gambar</label>
