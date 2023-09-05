@@ -99,24 +99,28 @@
 
   <main id="main">
 
-
-    <div class="container">
+{{-- 
+    <div class="profil-container">
       @foreach ($profils as $profil)
       <div class="section-title" data-aos="fade-up">
-        <h2>{{ $profil->title }}</h2>
+          <h2>{{ $profil->title }}</h2>
       </div>
       <div class="row">
-        <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-          <p data-aos="fade-up" data-aos-delay="400">{{ $profil->description }}</p>
-        </div>
-        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay="200">
-          <img src="image/{{ $profil->image }}" class="img-fluid animated" alt="">
-        </div>
+          <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+              <p data-aos="fade-up" data-aos-delay="400">{{ $profil->description }}</p>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay="200">
+              <img src="image/{{ $profil->image }}" class="img-fluid animated" alt="">
+          </div>
       </div>
-    </div>
-    @endforeach
+      @endforeach
+  </div> --}}
+  
 
-    {{-- <section id="profil" class="profil section-bg">
+  <link rel="stylesheet" href="path/to/your/style.css">
+
+
+    <section id="profil" class="profil section-bg">
       <div class="container">
         @foreach ($profils as $profil)
           <div class="section-title" data-aos="fade-up">
@@ -129,16 +133,16 @@
                   <img src="image/{{ $profil->image }}" class="img-fluid" alt="">
                 </div>
               </div>
-              <div class="col-lg-6">
-                <div class="profil-content">
-                  <p class="profil-paragraph">{{ $profil->description }}</p>
-                </div>
+              <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left">
+                <p class="profil-paragraph text-justify mx-2">{{ $profil->description }}</p>
+            </div>
+            
               </div>
             </div>
           </div>
         @endforeach
       </div>
-    </section> --}}
+    </section>
     
     
     
@@ -174,8 +178,7 @@
       </div>
     </section><!-- End About Us Section -->
 
-
-    @foreach ($profils as $profil)
+    {{-- @foreach ($profils as $profil)
     <section id="profil" class="profil section-bg">
         <div class="container">
             <div class="section-title" data-aos="fade-up">
@@ -183,19 +186,19 @@
             </div>
 
             <div class="profil-content d-flex">
-                <div class="profil-image">
-                    <img src="/image/{{ $profil->image }}" alt="" class="img-fluid">
-                </div>
-                <div class="profil-info flex-grow-1">
-                  <div class="container">
-                      <p>{{ $profil->description }}</p>
+
+                <div class="row">
+                  <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay="200">
+                    <img src="image/{{ $profil->image }}" class="img-fluid animated" alt="">
                   </div>
-              </div>
+                  <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+                      <p data-aos="fade-up" data-aos-delay="400">{{ $profil->description }}</p>
+                  </div>
               
             </div>
         </div>
     </section>
-@endforeach
+@endforeach --}}
 
     
     

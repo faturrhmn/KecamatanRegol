@@ -13,95 +13,47 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #4d4643;
 }
-
+/* ... */
 .loader {
   position: fixed;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(45deg);
-  width: 100px;
-  height: 100px;
-  animation: animate 1s linear infinite;
-}
-
-.loader span {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  background: #f00;
-  animation: rotate 1s linear infinite;
-}
-
-.loader span:nth-child(1) {
   top: 0;
   left: 0;
-  background: #f79f1f;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  z-index: 9999; /* Agar loader berada di atas konten lainnya */
+  opacity: 1; /* Awalnya terlihat */
+  transition: opacity 0.75s, visibility 0.75s;
 }
 
-.loader span:nth-child(2) {
-  top: 0;
-  right: 0;
-  background: #12cbc4;
+.loader-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none; /* Agar tidak dapat diinteraksi saat tersembunyi */
 }
 
-.loader span:nth-child(3) {
-  bottom: 0;
-  left: 0;
-  background: #ed4c67;
+.loader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid white;
+  border-top: 15px solid greenyellow;
+  border-radius: 50%;
+  animation: loading 0.75s linear infinite;
 }
 
-.loader span:nth-child(4) {
-  bottom: 0;
-  right: 0;
-  background: #a3cb38;
-}
+/* ... */
 
-@keyframes animate {
-  0% {
-    width: 100px;
-    height: 100px;
+
+@keyframes loading { /* Perbaikan: Ubah nama keyframes menjadi "loading" */
+  from {
+    transform: rotate(0turn);
   }
-
-  10% {
-    width: 100px;
-    height: 100px;
-  }
-
-  50% {
-    width: 150px;
-    height: 150px;
-  }
-
-  90% {
-    width: 100px;
-    height: 100px;
-  }
-
-  100% {
-    width: 100px;
-    height: 100px;
-  }
-}
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  10% {
-    transform: rotate(0deg);
-  }
-
-  60% {
-    transform: rotate(90deg);
-  }
-
-  90% {
-    transform: rotate(90deg);
-  }
-
-  100% {
-    transform: rotate(90deg);
+  to {
+    transform: rotate(1turn);
   }
 }
 
@@ -127,6 +79,11 @@ h6 {
 .paragraph {
   text-align: justify;
 }
+
+.profil-paragraph {
+  text-align: justify; /* Mengatur rata kanan kiri */
+}
+
 
 
 /*--------------------------------------------------------------
@@ -243,11 +200,11 @@ h6 {
 
 #header .logo a {
   color: #111;
-  margin-left: 10px;
 }
 
 #header .logo a span {
   color: #1bbd36;
+  margin-left: 5px;
 }
 
 #header .logo img {
@@ -263,13 +220,13 @@ h6 {
   }
 
   #header .logo {
-    font-size: 16px;
+    font-size: 18px;
     margin-top: 20px;
     /* Ukuran font logo lebih kecil pada mobile */
   }
 
   #header .logo img {
-    max-height: 20px;
+    max-height: 30px;
     /* Ukuran maksimum gambar logo pada mobile */
   }
 }
@@ -280,7 +237,7 @@ h6 {
 # Header Social Links
 --------------------------------------------------------------*/
 .header-social-links {
-  margin-left: 0px;
+  margin-left: 10px;
   border-left: 1px solid #c4c4c4;
 }
 
@@ -304,7 +261,6 @@ h6 {
   .header-social-links {
     padding: 0 15px 0 0;
     border-left: 0;
-    margin-top: 5px;
   }
 }
 
@@ -696,14 +652,20 @@ h6 {
   }
 }
 
-/* Gaya untuk tampilan mobile (lebar layar kurang dari 992px) */
 @media (max-width: 992px) {
-  #hero {
-    display: none;
-    /* Sembunyikan seluruh bagian hero */
+  #hero .carousel-container {
+    top: 58px;
+  }
+
+  #hero .carousel-content h2 {
+    margin-bottom: 15px;
+    font-size: 22px;
+  }
+
+  #hero .carousel-content p {
+    font-size: 15px;
   }
 }
-
 
 
 /*--------------------------------------------------------------
@@ -806,6 +768,8 @@ section {
     display: inline-block;
   }
 }
+
+
 
 /*--------------------------------------------------------------
 # Services
@@ -1154,9 +1118,8 @@ section {
   font-weight: 700;
   font-size: 42px;
   line-height: 60px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   text-transform: uppercase;
-  margin-top: 40px;
 }
 
 .about-us .content h3 {

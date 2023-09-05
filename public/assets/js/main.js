@@ -171,29 +171,15 @@
     })
   });
 
-  // Fungsi untuk menghilangkan loader
-function hideLoader() {
-  const loader = select('.loader');
-  if (loader) {
-    loader.style.display = 'none';
-  }
-}
+window.addEventListener("load", () =>{
+  const loader = document.querySelector(".loader");
 
-// Panggil hideLoader() saat halaman dimuat
-window.addEventListener('load', hideLoader);
+  loader.classList.add("loader-hidden");
 
-// Fungsi untuk menghilangkan loader dengan efek slow-motion
-function hideLoaderSlowMotion() {
-  const loader = select('.loader');
-  if (loader) {
-    setTimeout(function() {
-      loader.classList.add('hidden');
-    }, 2000); // Atur waktu penundaan di sini (dalam milidetik)
-  }
-}
+  loader.addEventListener("transitionend", () => {
+    document.body.removeChild("loader");
+  })
 
-// Panggil hideLoaderSlowMotion saat halaman dimuat
-window.addEventListener('load', hideLoaderSlowMotion);
-
+})
 
 })()
