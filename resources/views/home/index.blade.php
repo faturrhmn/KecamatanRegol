@@ -64,14 +64,14 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero">
 
-    <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel" style="height: 800px;>
 
       <div class="carousel-inner" role="listbox">
 
         @foreach ($sliders as $index => $slider)
             <!-- Slide 1 -->
             <div class="carousel-item {{ $index === 0 ? 'active' : '' }}">
-                <img src="image/{{ $slider->image }}" class="img-fluid" alt="">
+                <img src="image/{{ $slider->image }}" class="img-fluid" alt="" width="1250" height="800">
                 <div class="carousel-container">
                     <div class="carousel-content animate__animated animate__fadeInUp">
                         <p class="paragraph">{{ $slider->description }}</p>
