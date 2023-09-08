@@ -47,7 +47,7 @@
       $(window).on("load",function(){
         $(".loader").fadeOut("slow");
       });
-    </script>
+    </script> 
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
@@ -179,6 +179,7 @@
         <a href="https://www.facebook.com/kec.regolbdg/" class="facebook" target="_blank"><i class="bu bi-facebook"></i></a>
         <a href="https://www.instagram.com/kecamatan_regol/" class="instagram" target="_blank">
         <i class="bu bi-instagram"></i></a>
+        <a href="https://www.youtube.com/@kecamatanregol5785/videos" class="youtube" target="_blank"><i class="bu bi-youtube"></i></a>
       </div>
     </div>
   </footer><!-- End Footer -->

@@ -43,7 +43,7 @@
     $(window).on("load",function(){
       $(".loader").fadeOut("slow");
     });
-  </script>
+  </script> 
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
@@ -113,18 +113,19 @@
     </section><!-- End Breadcrumbs -->
 
     <!-- ======= Our Team Section ======= -->
-    <section id="team" class="team section-bg">
+    <section id="team-details" class="team-details section-bg">
       <div class="container">
         <div class="section-title" data-aos="fade-up">
           <h2>STRUKTUR ORGANISASI</h2>
         </div>
 
-        <div class="team-images">
-          @foreach ($teams as $team)
-              <img src="/image/{{ $team->image }}" class="img-fluid" alt="">
-
-          @endforeach
-        </div>
+        @foreach ($teams as $team)
+          <div class="portfolio-details-content d-flex">
+            <div class="team-images">
+                  <img src="/image/{{ $team->image }}" class="img-fluid" alt="">     
+            </div>
+          </div>
+        @endforeach
       
       </div>
     </section><!-- End Our Team Section -->
@@ -165,6 +166,7 @@
         <a href="https://www.facebook.com/kec.regolbdg/" class="facebook" target="_blank"><i class="bu bi-facebook"></i></a>
         <a href="https://www.instagram.com/kecamatan_regol/" class="instagram" target="_blank">
         <i class="bu bi-instagram"></i></a>
+        <a href="https://www.youtube.com/@kecamatanregol5785/videos" class="youtube" target="_blank"><i class="bu bi-youtube"></i></a>
       </div>
     </div>
   </footer><!-- End Footer -->
