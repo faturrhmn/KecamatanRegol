@@ -96,6 +96,40 @@ h6 {
   max-height: 50;
 }
 
+<<<<<<< HEAD
+=======
+#profil {
+  background-image: url('public/assets/img/bg-profil.png'); /* Ganti dengan path yang sesuai dengan gambar latar belakang Anda */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 0; /* Sesuaikan padding sesuai kebutuhan Anda */
+  /* color: #fff; Warna teks untuk kontras dengan latar belakang */
+}
+
+@media (max-width: 768px) {
+  #profil {
+    background-image: url('assets/img/bg-profil.png'); /* Ganti dengan path yang sesuai dengan gambar latar belakang mobile Anda */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+    /* Atur gambar latar belakang yang sesuai untuk tampilan mobile dan gunakan cover untuk menyesuaikan ukuran */
+  }
+}
+
+
+.youtube h2 {
+  margin-bottom: 20px; /* Merapikan margin bawah h2 */
+}
+
+.youtube .col-lg-6 {
+  margin-top: 20px; /* Merapikan margin atas frame video */
+}
+
+
+
+>>>>>>> d463633243ea402ac810c72e45e5d669d7bc5b40
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -230,7 +264,7 @@ h6 {
   }
 
   #header .logo {
-    font-size: 18px;
+    font-size: 15px;
     margin-top: 20px;
     /* Ukuran font logo lebih kecil pada mobile */
   }
@@ -247,7 +281,7 @@ h6 {
 # Header Social Links
 --------------------------------------------------------------*/
 .header-social-links {
-  margin-left: 10px;
+  margin-left: 5px;
   border-left: 1px solid #c4c4c4;
 }
 
@@ -719,6 +753,23 @@ section {
   margin-bottom: 0;
 }
 
+/* Gaya untuk tampilan mobile (lebar layar kurang dari 768px) */
+@media (max-width: 767px) {
+  section {
+    padding: 30px 0; /* Mengurangi padding pada section untuk tampilan mobile */
+  }
+
+  .section-title h2 {
+    font-size: 28px; /* Mengurangi ukuran font untuk h2 pada tampilan mobile */
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+
+  .section-title h2::after {
+    width: 30px; /* Mengurangi panjang garis bawah h2 */
+  }
+}
+
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
@@ -1176,7 +1227,6 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   /* Ini opsional, mengatur tinggi div sesuai kebutuhan */
 }
 
@@ -2243,7 +2293,7 @@ section {
 .portfolio-details .section-title {
   text-align: center;
   padding-bottom: 20px;
-  padding-top: 50px;
+  padding-top: 20px;
 }
 
 .portfolio-details .portfolio-details-images {
@@ -2293,42 +2343,66 @@ section {
     margin-bottom: 20px;
   }
 
+  .portfolio-details .portfolio-info {
+    display: block; /* Mengubah tata letak menjadi satu kolom */
+    text-align: center;
+  }
+
   .portfolio-details .portfolio-info h3 {
     font-size: 24px;
+    margin-top: 10px; /* Mengurangi margin atas judul */
   }
 
   .portfolio-details .portfolio-info p {
     font-size: 14px;
+    margin-top: 10px; /* Mengurangi margin atas paragraf */
   }
 }
 
+/* Styling for the Our Team Section */
+.team-details {
+  padding: 60px 0;
+  background-color: #f7f7f7;
+}
 
-/* Styling for screens with width up to 576px */
-@media (max-width: 576px) {
-  .portfolio-details-content {
-    flex-direction: column;
-    /* Mengatur tata letak konten menjadi satu kolom di tampilan mobile */
-    align-items: center;
-    /* Mengatur konten menjadi di tengah */
+.team-details .section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.team-details .section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.team-details .portfolio-details-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-details .team-images {
+  text-align: center;
+}
+
+.team-details .team-images img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* Styling for screens with width up to 768px (Mobile) */
+@media (max-width: 768px) {
+  .team-details {
+    padding: 40px 0; /* Mengurangi padding pada bagian Our Team Section untuk tampilan mobile */
   }
 
-  .portfolio-details-image {
-    margin-bottom: 15px;
-    /* Memberikan jarak antara gambar dan deskripsi */
-    margin-left: 25px;
+  .team-details .section-title h2 {
+    font-size: 24px; /* Mengurangi ukuran font judul untuk tampilan mobile */
   }
-
-  .portfolio-info {
-    text-align: center;
-    /* Mengatur teks menjadi di tengah */
-  }
-
-  .portfolio-info h3 {
-    font-size: 22px;
-  }
-
-  .portfolio-info p {
-    font-size: 13px;
+  .team-details .team-images {
+    margin-top: -50px;
   }
 }
 
@@ -2346,7 +2420,7 @@ section {
 }
 
 #footer .footer-top {
-  padding: 60px 0 30px 0;
+  padding: 30px 0 15px 0;
   background: #1e1e1e;
 }
 

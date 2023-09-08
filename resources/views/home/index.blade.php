@@ -6,7 +6,7 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo me-auto"><img src="assets/img/kota-bandung.png"a href="/">Kecamatan Regol</a></h1>
+      <h1 class="logo me-auto"><img src="assets/img/background.png"a href="/">Kecamatan Regol</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -120,7 +120,7 @@
   <link rel="stylesheet" href="path/to/your/style.css">
 
 
-    <section id="profil" class="profil section-bg">
+  <section id="profil" class="profil" style="background-image: url('assets/img/bg-profil.png');">
       <div class="container">
         @foreach ($profils as $profil)
           <div class="section-title" data-aos="fade-up">
@@ -143,10 +143,6 @@
         @endforeach
       </div>
     </section>
-    
-    
-    
-    
 
 
 
@@ -263,7 +259,7 @@
       </div>
     </section>
 
-    <section id="ifografi" class="ifografi section-bg">
+    <section id="ifografi" class="ifografi">
       <div class="container">
         <div class="section-title" data-aos="fade-up">
           <h2>Data INFOGRAFIS</h2>
@@ -278,6 +274,24 @@
         </div>
       </div>
     </section>
+
+
+    <section id="youtube" class="youtube">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Channel Youtube</h2>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-6 pt-lg-0 text-center">
+            <div class="ratio ratio-16x9">
+              <iframe src="https://www.youtube.com/embed/BcL_IfQP7RI?rel=0" title="YouTube video" allowfullscreen width="100%" height="100%"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
 
     <!-- ======= Our Clients Section ======= -->
     <section id="clients" class="clients">

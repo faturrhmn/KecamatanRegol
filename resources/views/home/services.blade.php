@@ -10,7 +10,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/kota-bandung.png" rel="icon">
+  <link href="assets/img/background.png" rel="icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -50,7 +50,7 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo me-auto"><img src="assets/img/kota-bandung.png"a href="/">Kecamatan Regol</a></h1>
+      <h1 class="logo me-auto"><img src="assets/img/background.png"a href="/">Kecamatan Regol</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -163,7 +163,7 @@
         <div class="row">
 
         <div class="footer-contact">
-            <h1 class="logo me-auto"><img src="assets/img/kota-bandung.png" alt="Logo Kecamatan Regol" style="max-width: 50px;">Website Resmi Kecamatan Regol</a></h1>
+            <h1 class="logo me-auto"><img src="assets/img/background.png" alt="Logo Kecamatan Regol" style="max-width: 50px;">Website Resmi Kecamatan Regol</a></h1>
             <p>
                 {{ $contact ->alamat }}<br>
                 <strong>Phone: </strong> {{ $contact ->telepon }}<br>
@@ -189,6 +189,7 @@
         <a href="https://www.facebook.com/kec.regolbdg/" class="facebook" target="_blank"><i class="bu bi-facebook"></i></a>
         <a href="https://www.instagram.com/kecamatan_regol/" class="instagram" target="_blank">
         <i class="bu bi-instagram"></i></a>
+        <a href="https://www.youtube.com/@kecamatanregol5785/videos" class="youtube" target="_blank"><i class="bu bi-youtube"></i></a>
       </div>
     </div>
   </footer><!-- End Footer -->
