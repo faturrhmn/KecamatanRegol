@@ -98,17 +98,20 @@ h6 {
 
 
 #profil {
-  background-image: url('public/assets/img/bg-profil.png'); /* Ganti dengan path yang sesuai dengan gambar latar belakang Anda */
+  background-image: url('public/assets/img/bg-profil.png');
+  /* Ganti dengan path yang sesuai dengan gambar latar belakang Anda */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 100px 0; /* Sesuaikan padding sesuai kebutuhan Anda */
+  padding: 100px 0;
+  /* Sesuaikan padding sesuai kebutuhan Anda */
   /* color: #fff; Warna teks untuk kontras dengan latar belakang */
 }
 
 @media (max-width: 768px) {
   #profil {
-    background-image: url('assets/img/bg-profil.png'); /* Ganti dengan path yang sesuai dengan gambar latar belakang mobile Anda */
+    background-image: url('assets/img/bg-profil.png');
+    /* Ganti dengan path yang sesuai dengan gambar latar belakang mobile Anda */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -119,11 +122,13 @@ h6 {
 
 
 .youtube h2 {
-  margin-bottom: 20px; /* Merapikan margin bawah h2 */
+  margin-bottom: 20px;
+  /* Merapikan margin bawah h2 */
 }
 
 .youtube .col-lg-6 {
-  margin-top: 20px; /* Merapikan margin atas frame video */
+  margin-top: 20px;
+  /* Merapikan margin atas frame video */
 }
 
 
@@ -755,17 +760,20 @@ section {
 /* Gaya untuk tampilan mobile (lebar layar kurang dari 768px) */
 @media (max-width: 767px) {
   section {
-    padding: 30px 0; /* Mengurangi padding pada section untuk tampilan mobile */
+    padding: 30px 0;
+    /* Mengurangi padding pada section untuk tampilan mobile */
   }
 
   .section-title h2 {
-    font-size: 28px; /* Mengurangi ukuran font untuk h2 pada tampilan mobile */
+    font-size: 28px;
+    /* Mengurangi ukuran font untuk h2 pada tampilan mobile */
     margin-bottom: 10px;
     padding-bottom: 10px;
   }
 
   .section-title h2::after {
-    width: 30px; /* Mengurangi panjang garis bawah h2 */
+    width: 30px;
+    /* Mengurangi panjang garis bawah h2 */
   }
 }
 
@@ -776,7 +784,7 @@ section {
   padding: 15px 0;
   background: #1bbd36;
   min-height: 40px;
-  margin-top: 72px;
+  margin-top: 50px;
 }
 
 
@@ -1176,10 +1184,11 @@ section {
 --------------------------------------------------------------*/
 .about-us .content h2 {
   font-weight: 700;
-  font-size: 42px;
+  font-size: 30px;
   line-height: 60px;
   margin-bottom: 20px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .about-us .content h3 {
@@ -2343,18 +2352,21 @@ section {
   }
 
   .portfolio-details .portfolio-info {
-    display: block; /* Mengubah tata letak menjadi satu kolom */
+    display: block;
+    /* Mengubah tata letak menjadi satu kolom */
     text-align: center;
   }
 
   .portfolio-details .portfolio-info h3 {
     font-size: 24px;
-    margin-top: 10px; /* Mengurangi margin atas judul */
+    margin-top: 10px;
+    /* Mengurangi margin atas judul */
   }
 
   .portfolio-details .portfolio-info p {
     font-size: 14px;
-    margin-top: 10px; /* Mengurangi margin atas paragraf */
+    margin-top: 10px;
+    /* Mengurangi margin atas paragraf */
   }
 }
 
@@ -2394,12 +2406,15 @@ section {
 /* Styling for screens with width up to 768px (Mobile) */
 @media (max-width: 768px) {
   .team-details {
-    padding: 40px 0; /* Mengurangi padding pada bagian Our Team Section untuk tampilan mobile */
+    padding: 40px 0;
+    /* Mengurangi padding pada bagian Our Team Section untuk tampilan mobile */
   }
 
   .team-details .section-title h2 {
-    font-size: 24px; /* Mengurangi ukuran font judul untuk tampilan mobile */
+    font-size: 24px;
+    /* Mengurangi ukuran font judul untuk tampilan mobile */
   }
+
   .team-details .team-images {
     margin-top: -50px;
   }
@@ -2429,7 +2444,7 @@ section {
 
 #footer .footer-top .footer-contact h1.logo {
   margin-bottom: 20px;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: bold;
   color: #fff;
 }
@@ -2440,7 +2455,7 @@ section {
 }
 
 #footer .footer-top .footer-contact p {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.6;
   margin-bottom: 0;
   color: rgba(255, 255, 255, 0.7);
@@ -2508,53 +2523,6 @@ section {
   color: #fff;
 }
 
-#footer .footer-newsletter {
-  font-size: 15px;
-  color: rgba(255, 255, 255, 0.7);
-}
-
-#footer .footer-newsletter h4 {
-  font-size: 16px;
-  font-weight: bold;
-  color: #fff;
-  position: relative;
-  padding-bottom: 12px;
-}
-
-#footer .footer-newsletter form {
-  margin-top: 30px;
-  background: #fff;
-  padding: 6px 10px;
-  position: relative;
-  border-radius: 4px 0 0 4px;
-  text-align: left;
-}
-
-#footer .footer-newsletter form input[type=email] {
-  border: 0;
-  padding: 4px 8px;
-  width: calc(100% - 100px);
-}
-
-#footer .footer-newsletter form input[type=submit] {
-  position: absolute;
-  top: 0;
-  right: -4px;
-  bottom: 0;
-  border: 0;
-  background: none;
-  font-size: 16px;
-  padding: 0 20px;
-  background: #1bbd36;
-  color: #fff;
-  transition: 0.3s;
-  border-radius: 0 4px 4px 0;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-}
-
-#footer .footer-newsletter form input[type=submit]:hover {
-  background: #2ae149;
-}
 
 #footer .credits {
   padding-top: 5px;
@@ -2581,4 +2549,107 @@ section {
   background: #1bbd36;
   color: #fff;
   text-decoration: none;
+}
+
+/* Styles for mobile devices (max-width: 991px) */
+@media (max-width: 991px) {
+  #footer .footer-top {
+    padding: 20px 0;
+    /* Reduce top and bottom padding for the footer top */
+  }
+
+  #footer .footer-top .footer-contact h1.logo {
+    font-size: 18px;
+    /* Decrease the logo font size */
+  }
+
+  #footer .footer-top .footer-contact h1.logo img {
+    max-width: 40px;
+    /* Decrease the logo image size */
+  }
+
+  #footer .footer-top .footer-contact p {
+    font-size: 14px;
+    /* Decrease the font size for contact information */
+  }
+
+  #footer .footer-top h4 {
+    font-size: 14px;
+    /* Decrease the font size for footer headings */
+  }
+
+  #footer .footer-top .footer-links ul i {
+    font-size: 16px;
+    /* Increase the icon size */
+  }
+
+  #footer .footer-top .footer-links ul li {
+    padding: 8px 0;
+    /* Reduce padding between footer links */
+  }
+
+  #footer .social-links a {
+    font-size: 16px;
+    /* Decrease the font size for social links */
+    width: 32px;
+    /* Decrease the width of social links */
+    height: 32px;
+    /* Decrease the height of social links */
+  }
+}
+
+
+/* Styles for desktop devices (min-width: 992px) */
+@media (min-width: 992px) {
+
+  /* Style for the container within the #profil section */
+  #profil .container {
+    max-width: 1200px;
+    /* Adjust the maximum width as needed */
+    margin: 0 auto;
+    /* Center the container horizontally */
+  }
+
+  /* Style for the image within the profile item */
+  #profil .profil-item .image-container img {
+    max-width: 100%;
+    height: auto;
+    margin-left: 200px;
+  }
+
+  #profil .profil-paragraph {
+    text-align: justify;
+    /* Left-align the text on mobile */
+  }
+}
+
+/* Styles for mobile devices (max-width: 991px) */
+@media (max-width: 991px) {
+
+  /* Style for the container within the #profil section */
+  #profil .container {
+    padding: 0 15px;
+    /* Add some horizontal padding for better mobile display */
+  }
+
+  /* Style for the image container to center the image */
+  #profil .profil-item .image-container {
+    text-align: center;
+  }
+
+  /* Style for the image within the profile item */
+  #profil .profil-item .image-container img {
+    max-width: 50%;
+    /* Adjust the image width as needed */
+    height: auto;
+    display: inline-block;
+    /* Ensure the image is treated as a block-level element */
+  }
+
+
+  /* Style for the profile description paragraph */
+  #profil .profil-paragraph {
+    text-align: justify;
+    /* Left-align the text on mobile */
+  }
 }

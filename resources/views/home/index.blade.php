@@ -64,7 +64,7 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero">
 
-    <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel" style="height: 800px;>
+    <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel" >
 
       <div class="carousel-inner" role="listbox">
 
@@ -130,7 +130,7 @@
             <div class="row">
               <div class="col-lg-6">
                 <div class="image-container">
-                  <img src="image/{{ $profil->image }}" class="img-fluid" alt="" style="max-width: 50%; height: auto; margin-left: 100px;">
+                  <img src="image/{{ $profil->image }}" class="img-fluid" alt="" style="max-width: 50%; height: auto;">
                 </div>
               </div>
               <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left">
