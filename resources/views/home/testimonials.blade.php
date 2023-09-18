@@ -61,7 +61,7 @@
           <li class="dropdown"><a href="#"  class="active"><span>Pemerintahan</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="about">Visi dan Misi</a></li>
-              <li><a href="team">Struktur Organisasi</a></li>
+              <li class="dropdown"><a href=""><span>Struktur Organisasi</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
                   <li><a href="{{ route('team.show', ['id' => 1]) }}">Kecamatan Regol</a></li>
                   <li><a href="{{ route('team.show', ['id' => 2]) }}">Kelurahan Ancol</a></li>
