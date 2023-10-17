@@ -127,8 +127,20 @@
             <div class="row">
                 <div class="col-md-12">
                     <h2>PPID Data</h2>
+
+                    <div class="row">
+                      <div class="col-6">
+                        <form action="{{ url('services') }}" method="GET">
+                          <div class="input-group mb-3">
+                              <input type="text" class="form-control" placeholder="Search file" name="search" value="{{ request('search') }}">
+                              <button class="btn btn-outline-success" type="submit">Cari</button>
+                          </div>
+                      </form>
+                      </div>
+                    </div>
+
                     @if ($ppids->isEmpty())
-                        <p>No PPID data available.</p>
+                        <p class="text-danger">File Ppid tidak ditemukan.</p>
                     @else
                         <table class="table">
                             <thead>
@@ -150,6 +162,11 @@
                 </div>
             </div>
         </div>
+
+        {{-- @else
+        <p class="text-center fs-4"->File tidak ditemukan.</p>
+        @endif --}}
+
       </section><!-- End PPID Data Section -->
 
 

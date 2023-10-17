@@ -75,7 +75,7 @@
 
       <div class="me-md-auto text-center text-md-start">
         <div class="text-center copyright">
-          &copy; Copyright <strong><span>Kecamatan Regol</span></strong>
+          &copy;Created By <strong><span>AgitFirmanda</span></strong>
         </div>
 
       </div>

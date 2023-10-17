@@ -98,15 +98,23 @@ class HomeController extends Controller
         'contact'));
     }
 
-    public function services()
-    {
-        $service = Service::all();
-        $contact = Contact::first();
-        $ppids = Ppid::all();
+    public function services(Request $request)
+{
+    $service = Service::all();
+    $contact = Contact::first();
+    
+    $query = Ppid::query();
 
-        return view('home.services', compact('service', 
-        'contact', 'ppids'));
+    if ($request->has('search')) {
+        $searchTerm = '%' . $request->input('search') . '%';
+        $query->where('title', 'like', $searchTerm)
+        ->orWhere('file', 'like', $searchTerm);
     }
+
+    $ppids = $query->get();
+
+    return view('home.services', compact('service', 'contact', 'ppids'));
+}
 
     public function showSejarah()
     {
