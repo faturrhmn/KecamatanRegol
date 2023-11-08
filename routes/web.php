@@ -1,8 +1,9 @@
 <?php
 
+use App\Http\Controllers\HomeController;
+//Admin
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
-use App\Http\Controllers\HomeController;
 use App\Http\Controllers\SliderController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\TestimonialController;
@@ -18,12 +19,12 @@ use Illuminate\support\Facades\Route;
 
 
 Route::get('/', [HomeController::class,'index']);
-Route::get('/about', [HomeController::class,'about']);
+Route::get('/visi-misi', [HomeController::class,'about']);
 Route::get('/contact', [HomeController::class,'contact']);
 Route::get('/portfolio', [HomeController::class,'portfolio']);
-Route::get('/services', [HomeController::class,'services']);
+Route::get('/ppids', [HomeController::class,'ppids']);
 Route::get('/team', [HomeController::class,'team']);
-Route::get('/testimonials', [HomeController::class,'testimonials']);
+Route::get('/tugas-dan-fungsi', [HomeController::class,'testimonials']);
 Route::get('/sejarah', [HomeController::class,'showsejarah']);
 Route::get('/ifografi', [HomeController::class,'ifografi']);
 Route::get('/profil', [HomeController::class,'profil']);

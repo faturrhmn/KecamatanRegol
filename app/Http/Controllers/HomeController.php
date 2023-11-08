@@ -98,7 +98,7 @@ class HomeController extends Controller
         'contact'));
     }
 
-    public function services(Request $request)
+    public function ppids(Request $request)
 {
     $service = Service::all();
     $contact = Contact::first();
