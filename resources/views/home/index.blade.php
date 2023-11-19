@@ -7,8 +7,6 @@
     <div class="container d-flex align-items-center">
 
       <h1 class="logo me-auto"><img src="assets/img/background.png"a href="/">Kecamatan Regol</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
@@ -31,15 +29,6 @@
               </li>
               <li><a href="testimonials">Tugas dan Fungsi</a></li>
               <li><a href="sejarah">Sejarah</a></li>
-              {{-- <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li> --}}
             </ul>
           </li>
 
@@ -135,50 +124,16 @@
         <div class="row content">
           <div class="col-lg-6" data-aos="fade-right">
             <h2>{{ $about->judul }}</h2>
-            {{-- <h3>{{ $about->subjudul }}</h3> --}}
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left">
             <p class="paragraph">
               {{ $about->deskripsi }}
             </p>
-            {{-- <ul>
-              <li><i class="ri-check-double-line"></i>{{ $about->kelebihan_1 }}</li>
-              <li><i class="ri-check-double-line"></i>{{ $about->kelebihan_2 }}</li>
-              <li><i class="ri-check-double-line"></i> {{ $about->kelebihan_3 }}</li>
-              <li><i class="ri-check-double-line"></i> {{ $about->kelebihan_4 }}</li>
-            </ul>
-            <p class="fst-italic">
-             {{ $about->deskripsi_2 }}
-            </p> --}}
           </div>
         </div>
 
       </div>
-    </section><!-- End About Us Section -->
-
-    {{-- @foreach ($profils as $profil)
-    <section id="profil" class="profil section-bg">
-        <div class="container">
-            <div class="section-title" data-aos="fade-up">
-                <h2>{{ $profil->title }}</h2>
-            </div>
-
-            <div class="profil-content d-flex">
-
-                <div class="row">
-                  <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay="200">
-                    <img src="image/{{ $profil->image }}" class="img-fluid animated" alt="">
-                  </div>
-                  <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-                      <p data-aos="fade-up" data-aos-delay="400">{{ $profil->description }}</p>
-                  </div>
-              
-            </div>
-        </div>
     </section>
-@endforeach --}}
-
-    
     
    <!-- ======= Portfolio Terbaru ======= -->
 <section id="latest-portfolio" class="latest-portfolio">
@@ -194,7 +149,6 @@
             <img src="/image/{{$portfolio->image}}" class="card-img-top" alt="{{$portfolio->title}}">
             <div class="card-body">
               <h5 class="card-title">{{$portfolio->title}}</h5>
-              {{-- <p class="card-text">{{$portfolio->description}}</p> --}}
             </div>
             <div class="card-footer">
               <a href="/image/{{$portfolio->image}}" data-gallery="portfolioGallery" class="btn btn-primary portfolio-lightbox preview-link"><i class="bx bx-plus"></i> View Image</a>
@@ -236,8 +190,64 @@
           </div>
           @endforeach
       </div>
-      
-      
+      </div>
+    </section>
+
+    <section id="team" class="team light-bg">
+      <div class="container">
+    
+        <div class="section-title" data-aos="fade-up">
+          <h2>Cek <strong>Pengajuan</strong></h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+    
+        <div class="row justify-content-center text-center"> <!-- Add justify-content-center and text-center classes here -->
+    
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member mx-auto" data-aos="fade-up">
+              <div class="member-img" style="height: 300px;"> <!-- Add a fixed height here -->
+                <img src="assets/img/KK.PNG" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="https://sipaku.bandung.go.id/cek-pengajuan/kartu-keluarga" target="_blank" title="Cek Pengajuan"><i class="bx bx-link"></i> Cek Pengajuan</a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Kartu Keluarga</h4>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member mx-auto" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img" style="height: 300px;"> <!-- Add a fixed height here -->
+                <img src="assets/img/KTPP.PNG" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="https://sipaku.bandung.go.id/cek-pengajuan/ktp" target="_blank" title="Cek Pengajuan"><i class="bx bx-link"></i> Cek Pengajuan</a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>KTP Elektronik</h4>
+                <span></span>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member mx-auto" data-aos="fade-up" data-aos-delay="200">
+              <div class="member-img" style="height: 300px;"> <!-- Add a fixed height here -->
+                <img src="assets/img/AHLII.PNG" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="https://sipaku.bandung.go.id/cek-pengajuan/ahli-waris" target="_blank" title="Cek Pengajuan"><i class="bx bx-link"></i> Cek Pengajuan</a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Ahli Waris</h4>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+    
       </div>
     </section>
 
@@ -314,3 +324,5 @@
     </section>
 
     @endsection
+
+{{-- https://developers.facebook.com/apps/234939402717423/dashboard/ --}}

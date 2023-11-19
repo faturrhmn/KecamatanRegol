@@ -111,7 +111,7 @@ class HomeController extends Controller
         ->orWhere('file', 'like', $searchTerm);
     }
 
-    $ppids = $query->get();
+    $ppids = $query->paginate(5);
 
     return view('home.services', compact('service', 'contact', 'ppids'));
 }

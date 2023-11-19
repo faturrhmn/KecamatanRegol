@@ -158,14 +158,16 @@
                                 @endforeach
                             </tbody>
                         </table>
+                        <nav aria-label="Page navigation example">
+                          <ul class="pagination justify-content-center">
+                              {{ $ppids->links() }}
+                          </ul>
+                      </nav>
                     @endif
                 </div>
             </div>
         </div>
 
-        {{-- @else
-        <p class="text-center fs-4"->File tidak ditemukan.</p>
-        @endif --}}
 
       </section><!-- End PPID Data Section -->
 
