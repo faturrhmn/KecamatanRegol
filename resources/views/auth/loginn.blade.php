@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Login Admin Kecamatan Regol</title>
-  <link rel="shortcut icon" type="image/png" href="assets/img/background.png" />
+  <title>Modernize Free</title>
+  <link rel="shortcut icon" type="image/png" href="/Modern/src/assets/images/logos/favicon.png" />
   <link rel="stylesheet" href="/Modern/src/assets/css/styles.min.css" />
 </head>
 
@@ -20,10 +20,10 @@
           <div class="col-md-8 col-lg-6 col-xxl-3">
             <div class="card mb-0">
               <div class="card-body">
-                <a href="/login" class="text-nowrap logo-img text-center d-block py-3 w-100">
-                  <img src="assets/img/background.png" width="180" alt="">
+                <a href="./index.html" class="text-nowrap logo-img text-center d-block py-3 w-100">
+                  <img src="/Modern/src/assets/images/logos/dark-logo.svg" width="180" alt="">
                 </a>
-                <p class="text-center">Admin Kecamatan Regol</p>
+                <p class="text-center">Your Social Campaigns</p>
 
                 @error('loginError')
                 <div class="alert alert-danger">
@@ -35,7 +35,7 @@
                 <form method="POST">
                     @csrf
                   <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                    <label for="exampleInputEmail1" class="form-label">Username</label>
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email" name="email">
                   </div>
 
