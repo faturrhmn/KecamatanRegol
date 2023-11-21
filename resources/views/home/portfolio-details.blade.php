@@ -132,16 +132,23 @@
       </div>
     
       <div class="portfolio-details-content d-flex">
-        <div class="portfolio-details-image">
-          <img src="/image/{{$portfolio->image}}" alt="" class="img-fluid">
-        </div>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <img src="/image/{{ $portfolio->image }}" class="d-block w-100 img-fluid" style="max-width: 100%; max-height: 400px;">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                  <img src="/image/{{ $portfolio->image2 }}" class="d-block w-100 img-fluid" style="max-width: 100%; max-height: 400px;">
+              </div>
+          </div>
+      </div>
+      
         <div class="portfolio-info flex-grow-1">
           <p>{{$portfolio->description}}</p>
         </div>
       </div>
     </div>
   </section>
-  
   
 
 

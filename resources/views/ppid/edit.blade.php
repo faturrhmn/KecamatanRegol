@@ -5,7 +5,7 @@
 @section('content')
 
 <div class="container">
-    <a href="/ppids" class="btn btn-primary mb-3">Kembali</a>
+    <a href="/admin/ppids" class="btn btn-primary mb-3">Kembali</a>
     <div class="row">
         <div class="col-md-12">
             <form action="{{ route('ppids.update', $ppid->id) }}" method="POST" enctype="multipart/form-data">

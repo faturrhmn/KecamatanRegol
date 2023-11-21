@@ -44,6 +44,13 @@ class PortfolioController extends Controller
             $image->move($destinationPath, $imageName);
             $input['image'] = $imageName;
         }
+
+        if ($image2 = $request->file('image2')) {
+            $destinationPath = "image/";
+            $imageName2 = $image2->getClientOriginalName();
+            $image2->move($destinationPath, $imageName2);
+            $input['image2'] = $imageName2;
+        }
     
         Portfolio::create($input);
     
@@ -85,6 +92,15 @@ class PortfolioController extends Controller
             $input['image'] = $imageName;
         }else{
             unset($input['image']);
+        }
+
+        if ($image2 = $request->file('image2')) {
+            $destinationPath = "image/";
+            $imageName2 = $image2->getClientOriginalName();
+            $image2->move($destinationPath, $imageName2);
+            $input['image2'] = $imageName2;
+        } else {
+            unset($input['image2']);
         }
 
         $portfolio->update($input);

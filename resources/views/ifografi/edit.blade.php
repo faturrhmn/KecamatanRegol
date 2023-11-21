@@ -5,7 +5,7 @@
 @section('content')
 
 <div class="container">
-    <a href="/ifografis" class="btn btn-primary mb-3">Kembali</a>
+    <a href="/admin/ifografis" class="btn btn-primary mb-3">Kembali</a>
     <div class="row">
         <div class="col-md-12">
             <form action="{{ route('ifografis.update', $ifografi->id) }}" method="POST" enctype="multipart/form-data">
