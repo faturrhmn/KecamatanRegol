@@ -26,7 +26,7 @@ Route::get('/ppids', [HomeController::class,'ppids']);
 Route::get('/team', [HomeController::class,'team']);
 Route::get('/tugas-dan-fungsi', [HomeController::class,'testimonials']);
 Route::get('/sejarah', [HomeController::class,'showsejarah']);
-Route::get('/ifografi', [HomeController::class,'ifografi']);
+// Route::get('/ifografi', [HomeController::class,'ifografi']);
 Route::get('/profil', [HomeController::class,'profil']);
 Route::get('/portfolio/{id}', [HomeController::class,'showportfolio'])->name('portfolio.show');
 Route::get('/team/{id}', [HomeController::class,'showteam'])->name('team.show');
@@ -50,8 +50,6 @@ Route::prefix('/admin')->middleware('auth')->group(function(){
     Route::resource('ppids', PpidController::class);
     Route::resource('ifografis', IfografiController::class);
     Route::resource('profils', ProfilController::class);
-
-    
     
     
     Route::get('contact', [ContactController::class, 'index']);
