@@ -114,7 +114,7 @@
         <div class="d-flex justify-content-between align-items-center">
           <ol>
             <li><a href="/">Beranda</a></li>
-            <li><a href="/services">PPID</a></li>
+            <li><a href="/ppids">PPID</a></li>
           </ol>
         </div>
 
@@ -130,7 +130,7 @@
 
                     <div class="row">
                       <div class="col-6">
-                        <form action="{{ url('services') }}" method="GET">
+                        <form action="{{ url('ppids') }}" method="GET">
                           <div class="input-group mb-3">
                               <input type="text" class="form-control" placeholder="Search file" name="search" value="{{ request('search') }}">
                               <button class="btn btn-outline-success" type="submit">Cari</button>
