@@ -21,6 +21,7 @@ use Illuminate\support\Facades\Route;
 Route::get('/', [HomeController::class,'index']);
 Route::get('/visi-misi', [HomeController::class,'about']);
 Route::get('/contact', [HomeController::class,'contact']);
+Route::get('/reload-captcha', [HomeController::class,'reloadCaptcha']);
 Route::get('/portfolio', [HomeController::class,'portfolio']);
 Route::get('/ppids', [HomeController::class,'ppids']);
 Route::get('/team', [HomeController::class,'team']);

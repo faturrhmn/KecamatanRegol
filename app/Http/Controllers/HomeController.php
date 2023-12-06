@@ -139,5 +139,9 @@ class HomeController extends Controller
         return view('home.team-details', compact('team', 'contact'));
     }
 
+    public function reloadCaptcha()
+    {
+        return response()->json(['captcha'=>captcha_img()]);
+    }
     
 }

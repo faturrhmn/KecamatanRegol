@@ -124,24 +124,35 @@
             </div>
             <div class="row">
               <div class="col-md-6 form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                <input type="text" name="name" class="form-control" id="name" placeholder="Nama" required>
               </div>
               <div class="col-md-6 form-group mt-3 mt-md-0">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                <input type="email" class="form-control" name="email" id="email" placeholder="Nomor Telepon" required>
               </div>
             </div>
             <div class="form-group mt-3">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              <textarea class="form-control" name="message" rows="5" placeholder="Kritik dan Saran" required></textarea>
             </div>
+
             <div class="form-group mt-3">
-              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              <div class="captcha">
+                <span>{!! captcha_img() !!}</span>
+                <button type ="button" class="btn btn-danger reload" id="reload">
+                  &#x21bb;
+                </button>
+              </div>
             </div>
+
+            <div class="col-md-6 form-group">
+              <input type="text" name="captcha" class="form-control" id="name" placeholder="Masukan Kode" required>
+            </div>
+
             <div class="my-3">
               <div class="loading">Loading</div>
               <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
+              <div class="sent-message">Pesan Telah Terkirim</div>
             </div>
-            <div class="text-center"><button type="submit">Send Message</button></div>
+            <div class="text-center"><button type="submit">Kirim</button></div>
           </form>
         </div>
 
@@ -151,4 +162,16 @@
 
     </section><!-- End Contact Section -->
 
+    <script>
+      $('#reload').click(function() {
+        $.ajax({
+          type: 'GET',
+          url: 'reload-captcha',
+          success: function(data) {
+            $(".captcha span").html(data.captcha);
+          }
+        });
+      });
+    </script>
+    
 @endsection
