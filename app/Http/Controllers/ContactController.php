@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Contact;
-use App\Models\KritikSaran;
 use Illuminate\Http\Request;
 
 class ContactController extends Controller
@@ -47,31 +46,5 @@ class ContactController extends Controller
         return redirect('/admin/contact')->with('message', 'Data berhasil di edit');
     }
 
-    public function storeKritikSaran(Request $request)
-    {
-        // Validasi input
-        $validatedData = $request->validate([
-            'name' => 'required|string|max:255',
-            'nomor_telepon' => 'required|numeric',
-            'kritiksaran' => 'required|string',
-        ]);
-
-        try {
-            // Simpan data ke database
-            $kritikSaran = new KritikSaran();
-            $kritikSaran->name = $validatedData['name'];
-            $kritikSaran->nomor_telepon = $validatedData['nomor_telepon'];
-            $kritikSaran->kritiksaran = $validatedData['kritiksaran'];
-            $kritikSaran->save();
-            
-            return redirect()->back()->with('success', 'Kritik dan saran Anda berhasil disimpan. Terima kasih!');
-        } catch (\Exception $e) {
-            // Cetak pesan error untuk debugging
-            dd($e->getMessage());
-            // atau
-            // return redirect()->back()->with('error', 'Terjadi kesalahan saat menyimpan kritik dan saran.');
-        }
-        
-    }
-
+    
 }

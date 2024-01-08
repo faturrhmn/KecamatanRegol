@@ -127,6 +127,9 @@
             <div class="row">
               <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Nama" required>
+                  @error('name')
+                      <span class="text-danger">{{ $message }}</span>
+                  @enderror
               </div>
               <div class="col-md-6 form-group mt-3 mt-md-0">
                 <input type="email" class="form-control" name="email" id="email" placeholder="Nomor Telepon" required>
@@ -146,7 +149,7 @@
             </div>
       
             <div class="col-md-6 form-group">
-              <input type="text" name="captcha" class="form-control" id="name" placeholder="Masukan Kode" required>
+              <input type="text" name="captcha" class="form-control" placeholder="Masukan Kode">
             </div>
 
             <div class="my-3">
