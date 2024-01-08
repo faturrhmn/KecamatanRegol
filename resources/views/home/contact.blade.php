@@ -144,7 +144,7 @@
                 </button>
               </div>
             </div>
-
+      
             <div class="col-md-6 form-group">
               <input type="text" name="captcha" class="form-control" id="name" placeholder="Masukan Kode" required>
             </div>
