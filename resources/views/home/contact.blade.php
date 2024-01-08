@@ -127,15 +127,26 @@
             <div class="row">
               <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Nama" required>
+                  @error('name')
+                      <span class="text-danger">{{ $message }}</span>
+                  @enderror
               </div>
               <div class="col-md-6 form-group mt-3 mt-md-0">
                   <!-- Perubahan: Mengubah type menjadi "tel" untuk input nomor telepon -->
                   <input type="tel" class="form-control" name="nomor_telepon" id="nomor_telepon" placeholder="Nomor Telepon" required pattern="[0-9]+" title="Harap masukkan hanya angka.">
+                  @error('nomor_telepon')
+                      <span class="text-danger">{{ $message }}</span>
+                  @enderror
               </div>
           </div>
+          
           <div class="form-group mt-3">
               <textarea class="form-control" name="kritiksaran" rows="5" placeholder="Kritik dan Saran" required></textarea>
+              @error('kritiksaran')
+                  <span class="text-danger">{{ $message }}</span>
+              @enderror
           </div>
+          
           
 
             <div class="form-group mt-3">
