@@ -118,10 +118,12 @@
 
       <div class="row mt-5 justify-content-center" data-aos="fade-up">
         <div class="col-lg-10">
-          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+          <form action="/kritiksaran" method="post" role="form" class="php-email-form">
+
             <div class="section-title">
               <h2>KRITIK & SARAN</h2>
             </div>
+            @csrf
             <div class="row">
               <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Nama" required>
@@ -164,6 +166,8 @@
 
     </section><!-- End Contact Section -->
 
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
     <script>
       $('#reload').click(function() {
         $.ajax({
@@ -174,6 +178,6 @@
           }
         });
       });
-    </script>
+    </script>
     
 @endsection
