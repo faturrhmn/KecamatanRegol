@@ -124,15 +124,17 @@
             </div>
             <div class="row">
               <div class="col-md-6 form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Nama" required>
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Nama" required>
               </div>
               <div class="col-md-6 form-group mt-3 mt-md-0">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Nomor Telepon" required>
+                  <!-- Perubahan: Mengubah type menjadi "tel" untuk input nomor telepon -->
+                  <input type="tel" class="form-control" name="nomor_telepon" id="nomor_telepon" placeholder="Nomor Telepon" required pattern="[0-9]+" title="Harap masukkan hanya angka.">
               </div>
-            </div>
-            <div class="form-group mt-3">
-              <textarea class="form-control" name="message" rows="5" placeholder="Kritik dan Saran" required></textarea>
-            </div>
+          </div>
+          <div class="form-group mt-3">
+              <textarea class="form-control" name="kritiksaran" rows="5" placeholder="Kritik dan Saran" required></textarea>
+          </div>
+          
 
             <div class="form-group mt-3">
               <div class="captcha">
