@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\KritikDanSaranController;
 //Admin
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
@@ -18,10 +19,10 @@ use App\Http\Controllers\ProfilController;
 use Illuminate\support\Facades\Route;
 
 
+Route::post('/kritiksaran', [KritikDanSaranController::class, 'store'])->name('kritiksaran.store');
 Route::get('/', [HomeController::class,'index']);
 Route::get('/visi-misi', [HomeController::class,'about']);
 Route::get('/contact', [HomeController::class,'contact']);
-Route::post('/kritiksaran', [ContactController::class,'storeKritikSaran']);
 Route::get('/reload-captcha', [HomeController::class,'reloadCaptcha']);
 Route::get('/portfolio', [HomeController::class,'portfolio']);
 Route::get('/ppids', [HomeController::class,'ppids']);
@@ -53,12 +54,12 @@ Route::prefix('/admin')->middleware('auth')->group(function(){
     Route::resource('ifografis', IfografiController::class);
     Route::resource('profils', ProfilController::class);
     
-    
     Route::get('contact', [ContactController::class, 'index']);
     Route::put('contact/{contact}', [ContactController::class, 'update']);
     
     Route::get('about', [AboutController::class, 'index']);
     Route::put('about/{about}', [AboutController::class, 'update']);
-
+    
+    Route::get('kritiksaran', [KritikDanSaranController::class, 'index']);
 });
 

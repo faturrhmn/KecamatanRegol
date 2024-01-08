@@ -126,11 +126,12 @@
             @csrf
             <div class="row">
               <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Nama" required>
-                  @error('name')
-                      <span class="text-danger">{{ $message }}</span>
-                  @enderror
-              </div>
+                <input type="text" name="nama" class="form-control" id="nama" placeholder="Nama" required>
+                @error('nama') <!-- Ubah dari 'name' ke 'nama' di sini -->
+                    <span class="text-danger">{{ $message }}</span>
+                @enderror
+            </div>
+            
               <div class="col-md-6 form-group mt-3 mt-md-0">
                   <!-- Perubahan: Mengubah type menjadi "tel" untuk input nomor telepon -->
                   <input type="tel" class="form-control" name="nomor_telepon" id="nomor_telepon" placeholder="Nomor Telepon" required pattern="[0-9]+" title="Harap masukkan hanya angka.">
@@ -159,7 +160,7 @@
             </div>
 
             <div class="col-md-6 form-group">
-              <input type="text" name="captcha" class="form-control" id="name" placeholder="Masukan Kode" required>
+              <input type="text" name="captcha" class="form-control" placeholder="Masukan Kode">
             </div>
 
             <div class="my-3">

@@ -14,7 +14,7 @@ class KritikSaran extends Model
      *
      * @var string
      */
-    protected $table = 'kritik_saran';
+    protected $table = 'kritikdansarans';
 
     /**
      * Kolom yang dapat diisi massal.
@@ -22,7 +22,7 @@ class KritikSaran extends Model
      * @var array
      */
     protected $fillable = [
-        'name',
+        'nama',
         'nomor_telepon',
         'kritiksaran',
     ];
@@ -33,7 +33,7 @@ class KritikSaran extends Model
      * @var array
      */
     protected $casts = [
-        'name' => 'string',
+        'nama' => 'string',
         'nomor_telepon' => 'integer',
         'kritiksaran' => 'string',
     ];

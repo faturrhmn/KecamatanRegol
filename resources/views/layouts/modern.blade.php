@@ -117,6 +117,14 @@
                 <span class="hide-menu">Contact</span>
               </a>
             </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="/admin/kritiksaran" aria-expanded="false">
+                <span>
+                  <i class="ti ti-file-description"></i>
+                </span>
+                <span class="hide-menu">Kritik Saran</span>
+              </a>
+            </li>
           </ul>
 
         </nav>
