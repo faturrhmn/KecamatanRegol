@@ -124,14 +124,14 @@
             </div>
             <div class="row">
               <div class="col-md-6 form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Nama" required>
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Nama" required>
               </div>
               <div class="col-md-6 form-group mt-3 mt-md-0">
-                <input type="no_telepon" class="form-control" name="no_telepon" id="no_telepon" placeholder="Nomor Telepon" required>
+                <input type="email" class="form-control" name="email" id="email" placeholder="Nomor Telepon" required>
               </div>
             </div>
             <div class="form-group mt-3">
-              <textarea class="form-control" name="pesan" rows="5" placeholder="Kritik dan Saran" required></textarea>
+              <textarea class="form-control" name="message" rows="5" placeholder="Kritik dan Saran" required></textarea>
             </div>
 
             <div class="form-group mt-3">
