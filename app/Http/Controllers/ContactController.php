@@ -56,15 +56,22 @@ class ContactController extends Controller
             'kritiksaran' => 'required|string',
         ]);
 
-        // Simpan data ke database
-        $kritikSaran = new KritikSaran(); // Menggunakan model KritikSaran
-        $kritikSaran->name = $validatedData['name'];
-        $kritikSaran->nomor_telepon = $validatedData['nomor_telepon'];
-        $kritikSaran->kritiksaran = $validatedData['kritiksaran'];
-        $kritikSaran->save();
-
-        // Redirect dengan pesan berhasil (opsional)
-        return redirect()->back()->with('success', 'Kritik dan saran Anda berhasil disimpan. Terima kasih!');
+        try {
+            // Simpan data ke database
+            $kritikSaran = new KritikSaran();
+            $kritikSaran->name = $validatedData['name'];
+            $kritikSaran->nomor_telepon = $validatedData['nomor_telepon'];
+            $kritikSaran->kritiksaran = $validatedData['kritiksaran'];
+            $kritikSaran->save();
+            
+            return redirect()->back()->with('success', 'Kritik dan saran Anda berhasil disimpan. Terima kasih!');
+        } catch (\Exception $e) {
+            // Cetak pesan error untuk debugging
+            dd($e->getMessage());
+            // atau
+            // return redirect()->back()->with('error', 'Terjadi kesalahan saat menyimpan kritik dan saran.');
+        }
+        
     }
 
 }
