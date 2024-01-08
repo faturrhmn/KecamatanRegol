@@ -1,6 +1,6 @@
 @extends('layouts.modern')
 
-@section('title', 'Data Contact')
+@section('title', 'Kritik dan Saran')
 
 @section('content')
 

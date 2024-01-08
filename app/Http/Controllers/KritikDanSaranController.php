@@ -20,7 +20,7 @@ class KritikDanSaranController extends Controller
         $kritikSarans = KritikSaran::all();
 
         // Mengembalikan view dengan data yang telah diambil
-        return view('kritikdansasran', ['kritikSarans' => $kritikSarans]);
+        return view('kritikdansaran', ['kritikSarans' => $kritikSarans]);
     }
     public function store(Request $request)
     {
